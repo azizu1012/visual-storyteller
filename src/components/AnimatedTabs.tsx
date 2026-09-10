@@ -6,7 +6,7 @@ export interface TabItem {
   id: string;
   label: string;
   icon?: React.ReactNode;
-  badge?: string | number;
+  badge?: string | number | undefined;
 }
 
 interface AnimatedTabsProps {

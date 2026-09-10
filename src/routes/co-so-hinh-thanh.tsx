@@ -204,7 +204,17 @@ function CoSoHinhThanhPage() {
                     Thực tiễn Việt Nam cuối TK XIX – đầu TK XX
                   </h3>
                   <p className="text-xs text-muted-foreground italic">
-                    Phố Hàng Buồm, Hà Nội đầu thế kỷ XX — phản ánh xã hội thuộc địa nửa phong kiến.
+                    <a
+                      href="https://vi.wikipedia.org/wiki/Ph%E1%BB%91_H%C3%A0ng_Bu%E1%BB%93m"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Phố Hàng Buồm – Wikipedia tiếng Việt"
+                      className="hover:underline hover:text-primary inline-flex items-center gap-1 font-medium"
+                    >
+                      <span>Phố Hàng Buồm, Hà Nội đầu thế kỷ XX</span>
+                      <ExternalLink className="size-2.5 inline" />
+                    </a>{" "}
+                    — phản ánh xã hội thuộc địa nửa phong kiến.
                   </p>
                 </div>
 

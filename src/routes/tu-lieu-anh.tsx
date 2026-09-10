@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ExternalLink, ZoomIn, ArrowRight, Eye } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { contentDatabase, type TuLieuAnhItem } from "@/lib/content-db";
+import { contentDatabase, BASE_TU_LIEU_ANH_DATA, type TuLieuAnhItem } from "@/lib/content-db";
 import {
   Dialog,
   DialogContent,
@@ -21,6 +21,9 @@ import tk1911 from "@/assets/tk-1911.jpg";
 import tk1920 from "@/assets/tk-1920.jpg";
 import tk1941 from "@/assets/tk-1941.jpg";
 import tk1945 from "@/assets/tk-1945.jpg";
+import leParia from "@/assets/le-paria-1922.jpg";
+import truongDucThanh from "@/assets/truong-duc-thanh.jpg";
+import dienBienPhu from "@/assets/dien-bien-phu-1954.jpg";
 
 export const Route = createFileRoute("/tu-lieu-anh")({
   head: () => ({
@@ -36,136 +39,42 @@ export const Route = createFileRoute("/tu-lieu-anh")({
   component: TuLieuAnhPage,
 });
 
-interface PhotoDoc {
-  id: number;
-  title: string;
-  category: string;
-  year: string;
+interface PhotoDoc extends TuLieuAnhItem {
   src: string;
-  caption: string;
-  author: string;
-  sourceUrl: string;
 }
-
-const PHOTOS: PhotoDoc[] = [
-  {
-    id: 1,
-    title: "Suối Lênin và Hang Cốc Bó (Pác Bó, Cao Bằng)",
-    category: "Địa danh lịch sử",
-    year: "1941",
-    src: tk1941,
-    caption:
-      "Khu di tích Pác Bó (hang Cốc Bó), huyện Hà Quảng, Cao Bằng — nơi đồng chí Nguyễn Ái Quốc vượt biên giới trở về trực tiếp chỉ đạo cách mạng sau 30 năm xa cách Tổ quốc.",
-    author: "Tycho (shansov.net)",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:C%E1%BB%91c_B%C3%B3.jpg",
-  },
-  {
-    id: 2,
-    title: "Phố Hàng Buồm, Hà Nội đầu thế kỷ XX",
-    category: "Bối cảnh xã hội",
-    year: "Đầu TK XX",
-    src: thucTienVn,
-    caption:
-      "Phố Hàng Buồm (rue des Pavillons Noirs), Hà Nội đầu thế kỷ XX — phản ánh xã hội thuộc địa nửa phong kiến với nỗi thống khổ và áp bức đè nặng lên các tầng lớp nhân dân.",
-    author: "Nhiếp ảnh gia vô danh thời Pháp thuộc",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Hano%C3%AF_-_Rue_des_Pavillons_Noirs.jpg",
-  },
-  {
-    id: 3,
-    title: "Cung điện Mùa Đông sau Cách mạng Tháng Mười Nga",
-    category: "Bối cảnh thời đại",
-    year: "10-1917",
-    src: thucTienTg,
-    caption:
-      "Petrograd sau khi Cung điện Mùa Đông bị chiếm ngày 26-10-1917 — biểu tượng thắng lợi của Cách mạng Tháng Mười Nga, mở ra thời đại quá độ lên chủ nghĩa xã hội trên toàn thế giới.",
-    author: "Tư liệu lưu trữ Liên Xô",
-    sourceUrl:
-      "https://commons.wikimedia.org/wiki/File:After_the_capture_of_the_Winter_Palace_26_October_1917.jpg",
-  },
-  {
-    id: 4,
-    title: "V. I. Lênin tại Mát-xcơ-va năm 1920",
-    category: "Tiền đề lý luận",
-    year: "1920",
-    src: lyLuan,
-    caption:
-      "Chân dung Vladimir Ilyich Lenin năm 1920 — tác giả của bản 'Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa' đã định hướng con đường cứu nước cho Nguyễn Ái Quốc.",
-    author: "Pavel Zhukov",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lenin_in_1920.jpg",
-  },
-  {
-    id: 5,
-    title: "Tàu Amiral Latouche-Tréville",
-    category: "Hành trình cứu nước",
-    year: "05-06-1911",
-    src: tk1911,
-    caption:
-      "Con tàu buôn của hãng vận tải Chargeurs Réunis — nơi người thanh niên Nguyễn Tất Thành nhận làm phụ bếp dưới tên Văn Ba để rời cảng Sài Gòn sang phương Tây.",
-    author: "Hãng vận tải biển Chargeurs Réunis",
-    sourceUrl:
-      "https://commons.wikimedia.org/wiki/File:M_128_10_descente_de_l%27Himalaya_et_du_Latouche_Tr%C3%A9ville.jpg",
-  },
-  {
-    id: 6,
-    title: "Nguyễn Ái Quốc phát biểu tại Đại hội Tours (Pháp)",
-    category: "Hành trình cứu nước",
-    year: "12-1920",
-    src: tk1920,
-    caption:
-      "Nguyễn Ái Quốc đứng trên diễn đàn Đại hội toàn quốc lần thứ XVIII Đảng Xã hội Pháp tại thành phố Tours, bỏ phiếu tán thành Quốc tế Cộng sản và tham gia sáng lập Đảng Cộng sản Pháp.",
-    author: "Tư liệu Đảng Cộng sản Pháp",
-    sourceUrl:
-      "https://commons.wikimedia.org/wiki/File:Comrade_Nguyen_Ai_Quoc_at_the_national_congress_of_the_Socialist_Party_of_France_in_the_city_of_Tous,_France_in_December_1920.jpg",
-  },
-  {
-    id: 7,
-    title: "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Ba Đình",
-    category: "Mốc son lịch sử",
-    year: "02-09-1945",
-    src: tk1945,
-    caption:
-      "Chủ tịch Hồ Chí Minh đứng trên lễ đài tại Quảng trường Ba Đình, Hà Nội đọc bản Tuyên ngôn Độc lập lịch sử, khai sinh nước Việt Nam Dân chủ Cộng hòa trước quốc dân và thế giới.",
-    author: "Việt Nam Độc lập Đồng minh Hội",
-    sourceUrl:
-      "https://commons.wikimedia.org/wiki/File:Pr%C3%A9sident_Ho-chi-Minh_lit_la_Proclamation-d%27ind%C3%A9pendance_sur_la_place_Ba-dinh_le_2nd_Sep_1945.jpg",
-  },
-  {
-    id: 8,
-    title: "Chân dung Chủ tịch Hồ Chí Minh năm 1946",
-    category: "Chân dung lãnh tụ",
-    year: "1946",
-    src: chanDung,
-    caption:
-      "Chân dung Chủ tịch Hồ Chí Minh năm 1946 trong những ngày đầu non sông vừa giành độc lập, thể hiện phong thái ung dung, ánh mắt sáng ngời và bản lĩnh phi thường.",
-    author: "Nhiếp ảnh gia vô danh",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg",
-  },
-];
 
 const PHOTO_ASSETS: Record<number, string> = {
   1: tk1941,
   2: thucTienVn,
-  3: tk1911,
-  4: tk1920,
-  5: thucTienTg,
-  6: lyLuan,
+  3: thucTienTg,
+  4: lyLuan,
+  5: tk1911,
+  6: tk1920,
   7: tk1945,
   8: chanDung,
+  9: leParia,
+  10: truongDucThanh,
+  11: dienBienPhu,
 };
+
+const PHOTOS: PhotoDoc[] = BASE_TU_LIEU_ANH_DATA.map((item) => ({
+  ...item,
+  src: PHOTO_ASSETS[item.id] || tk1941,
+}));
 
 function TuLieuAnhPage() {
   const [selectedPhoto, setSelectedPhoto] = React.useState<PhotoDoc | null>(null);
   const [filterCategory, setFilterCategory] = React.useState<string>("all");
 
   // Nạp dữ liệu ảnh động theo yêu cầu (on-demand loading) từ Database
-  const { data: dbResult, isLoading } = useQuery({
+  const { data: dbResult } = useQuery({
     queryKey: ["tu-lieu-anh-content", filterCategory],
     queryFn: () => contentDatabase.getTuLieuAnhContent(),
     staleTime: 1000 * 60 * 5,
   });
 
   const rawPhotos: TuLieuAnhItem[] =
-    dbResult?.data || (contentDatabase as any).memoryCache?.get("tu-lieu-anh") || PHOTOS;
+    dbResult?.data || (contentDatabase as any).memoryCache?.get("tu-lieu-anh") || BASE_TU_LIEU_ANH_DATA;
 
   const photos: PhotoDoc[] = (rawPhotos || []).map((p) => ({
     ...p,
@@ -174,11 +83,12 @@ function TuLieuAnhPage() {
 
   const categories = [
     "all",
-    "Bối cảnh xã hội",
-    "Hành trình cứu nước",
     "Địa danh lịch sử",
-    "Mốc son lịch sử",
+    "Bối cảnh xã hội",
+    "Bối cảnh thời đại",
     "Tiền đề lý luận",
+    "Hành trình cứu nước",
+    "Mốc son lịch sử",
     "Chân dung lãnh tụ",
   ];
 
@@ -198,25 +108,37 @@ function TuLieuAnhPage() {
         </h1>
         <p className="max-w-3xl text-base sm:text-lg text-muted-foreground leading-relaxed">
           Bộ sưu tập các bức ảnh tư liệu lịch sử có giá trị cao, được chú thích bối cảnh, tác giả và
-          đường dẫn tra cứu trực tiếp nguồn mở trên Wikimedia Commons.
+          đường dẫn tra cứu trực tiếp nguồn mở trên Wikipedia và Wikimedia Commons.
         </p>
       </div>
 
       {/* Category Filter Pills */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setFilterCategory(cat)}
-            className={`rounded-full px-4 py-1.5 text-xs font-medium transition-colors shrink-0 ${
-              filterCategory === cat
-                ? "bg-primary text-primary-foreground font-semibold shadow-sm"
-                : "bg-secondary text-muted-foreground hover:bg-secondary/80 hover:text-foreground"
-            }`}
-          >
-            {cat === "all" ? "Tất cả tư liệu" : cat}
-          </button>
-        ))}
+        {categories.map((cat) => {
+          const count = cat === "all" ? photos.length : photos.filter((p) => p.category === cat).length;
+          return (
+            <button
+              key={cat}
+              onClick={() => setFilterCategory(cat)}
+              className={`rounded-full px-4 py-1.5 text-xs font-medium transition-colors shrink-0 flex items-center gap-1.5 ${
+                filterCategory === cat
+                  ? "bg-primary text-primary-foreground font-semibold shadow-sm"
+                  : "bg-secondary text-muted-foreground hover:bg-secondary/80 hover:text-foreground"
+              }`}
+            >
+              <span>{cat === "all" ? "Tất cả tư liệu" : cat}</span>
+              <span
+                className={`text-[0.65rem] px-1.5 py-0.2 rounded-full ${
+                  filterCategory === cat
+                    ? "bg-primary-foreground/20 text-primary-foreground font-bold"
+                    : "bg-muted text-muted-foreground"
+                }`}
+              >
+                {count}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Gallery Grid */}
@@ -331,7 +253,14 @@ function TuLieuAnhPage() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 text-primary hover:underline font-medium"
                   >
-                    <span>Xem trên Wikimedia</span>
+                    <span>
+                      {selectedPhoto.sourceLabel ||
+                        (selectedPhoto.sourceUrl.includes("vi.wikipedia.org")
+                          ? "Wikipedia tiếng Việt"
+                          : selectedPhoto.sourceUrl.includes("wikipedia.org")
+                          ? "Wikipedia"
+                          : "Wikimedia Commons")}
+                    </span>
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </div>

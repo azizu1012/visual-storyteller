@@ -36,4 +36,49 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
       expect(scholar.text.length).toBeGreaterThan(10);
     });
   });
+
+  it("should provide 11 authentic historical photos with valid categories and Pho Hang Buom wiki link", async () => {
+    const result = await contentDatabase.getTuLieuAnhContent();
+    expect(result.data).toHaveLength(11);
+
+    // Verify Pho Hang Buom
+    const hangBuom = result.data.find((p) => p.id === 2);
+    expect(hangBuom).toBeDefined();
+    expect(hangBuom?.title).toContain("Phố Hàng Buồm");
+    expect(hangBuom?.category).toBe("Bối cảnh xã hội");
+    expect(hangBuom?.sourceUrl).toBe("https://vi.wikipedia.org/wiki/Ph%E1%BB%91_H%C3%A0ng_Bu%E1%BB%93m");
+    expect(hangBuom?.sourceLabel).toBe("Phố Hàng Buồm – Wikipedia tiếng Việt");
+
+    // Verify newly added historical milestones
+    const leParia = result.data.find((p) => p.id === 9);
+    expect(leParia).toBeDefined();
+    expect(leParia?.title).toContain("Le Paria");
+    expect(leParia?.category).toBe("Hành trình cứu nước");
+
+    const ducThanh = result.data.find((p) => p.id === 10);
+    expect(ducThanh).toBeDefined();
+    expect(ducThanh?.title).toContain("Trường Dục Thanh");
+    expect(ducThanh?.category).toBe("Địa danh lịch sử");
+
+    const dienBienPhu = result.data.find((p) => p.id === 11);
+    expect(dienBienPhu).toBeDefined();
+    expect(dienBienPhu?.title).toContain("Điện Biên Phủ");
+    expect(dienBienPhu?.category).toBe("Mốc son lịch sử");
+
+    // Verify every filter category has matching items
+    const expectedCategories = [
+      "Địa danh lịch sử",
+      "Bối cảnh xã hội",
+      "Bối cảnh thời đại",
+      "Tiền đề lý luận",
+      "Hành trình cứu nước",
+      "Mốc son lịch sử",
+      "Chân dung lãnh tụ",
+    ];
+
+    expectedCategories.forEach((cat) => {
+      const itemsInCat = result.data.filter((p) => p.category === cat);
+      expect(itemsInCat.length).toBeGreaterThan(0);
+    });
+  });
 });

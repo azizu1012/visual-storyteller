@@ -122,6 +122,7 @@ export interface TuLieuAnhItem {
   caption: string;
   author: string;
   sourceUrl: string;
+  sourceLabel?: string | undefined;
 }
 
 // 1. Dữ liệu Luận bàn (100% chuẩn đối chiếu từ base index.tsx)
@@ -587,81 +588,126 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
       "Khu di tích Pác Bó (hang Cốc Bó), huyện Hà Quảng, Cao Bằng — nơi đồng chí Nguyễn Ái Quốc vượt biên giới trở về trực tiếp chỉ đạo cách mạng sau 30 năm xa cách Tổ quốc.",
     author: "Tycho (shansov.net)",
     sourceUrl: "https://commons.wikimedia.org/wiki/File:C%E1%BB%91c_B%C3%B3.jpg",
+    sourceLabel: "Cốc Bó – Wikimedia Commons",
   },
   {
     id: 2,
-    title: "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình",
-    category: "Sự kiện lịch sử",
-    year: "1945",
+    title: "Phố Hàng Buồm, Hà Nội đầu thế kỷ XX",
+    category: "Bối cảnh xã hội",
+    year: "Đầu TK XX",
     caption:
-      "Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập lịch sử tại Quảng trường Ba Đình, Hà Nội ngày 2 tháng 9 năm 1945, khai sinh nước Việt Nam Dân chủ Cộng hòa.",
-    author: "Việt Nam Độc lập Đồng minh Hội",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_reads_the_Declaration_of_Independence_of_Vietnam_crop.jpg",
+      "Phố Hàng Buồm (rue des Pavillons Noirs), Hà Nội đầu thế kỷ XX — phản ánh xã hội thuộc địa nửa phong kiến với nỗi thống khổ và áp bức đè nặng lên các tầng lớp nhân dân.",
+    author: "Nhiếp ảnh gia Pierre Dieulefils / Tư liệu thời Pháp thuộc",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Ph%E1%BB%91_H%C3%A0ng_Bu%E1%BB%93m",
+    sourceLabel: "Phố Hàng Buồm – Wikipedia tiếng Việt",
   },
   {
     id: 3,
-    title: "Chân dung Chủ tịch Hồ Chí Minh năm 1946",
-    category: "Chân dung lịch sử",
-    year: "1946",
+    title: "Cung điện Mùa Đông sau Cách mạng Tháng Mười Nga",
+    category: "Bối cảnh thời đại",
+    year: "10-1917",
     caption:
-      "Chân dung Chủ tịch Hồ Chí Minh trong chuyến thăm chính thức nước Pháp năm 1946 với tư cách thượng khách của Chính phủ Pháp.",
-    author: "Bộ Quốc phòng Pháp (ECPAD)",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg",
+      "Petrograd sau khi Cung điện Mùa Đông bị chiếm ngày 26-10-1917 — biểu tượng thắng lợi của Cách mạng Tháng Mười Nga, mở ra thời đại quá độ lên chủ nghĩa xã hội trên toàn thế giới.",
+    author: "Tư liệu lưu trữ Liên Xô",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:After_the_capture_of_the_Winter_Palace_26_October_1917.jpg",
+    sourceLabel: "Petrograd 1917 – Wikimedia Commons",
   },
   {
     id: 4,
-    title: "Tàu buôn Amiral Latouche-Tréville",
-    category: "Phương tiện lịch sử",
-    year: "1911",
+    title: "V. I. Lênin tại Mát-xcơ-va năm 1920",
+    category: "Tiền đề lý luận",
+    year: "1920",
     caption:
-      "Tàu buôn Amiral Latouche-Tréville của hãng Chargeurs Réunis — con tàu người thanh niên Nguyễn Tất Thành làm phụ bếp rời cảng Sài Gòn ngày 05/06/1911 bắt đầu hành trình cứu nước.",
-    author: "Tư liệu lưu trữ Chargeurs Réunis",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Amiral_Latouche-Tr%C3%A9ville.jpg",
+      "Chân dung Vladimir Ilyich Lenin năm 1920 — tác giả của bản 'Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa' đã định hướng con đường cứu nước cho Nguyễn Ái Quốc.",
+    author: "Pavel Zhukov",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lenin_in_1920.jpg",
+    sourceLabel: "Lenin in 1920 – Wikimedia Commons",
   },
   {
     id: 5,
-    title: "Đại hội Tours – Thành lập Đảng Cộng sản Pháp",
-    category: "Sự kiện quốc tế",
-    year: "1920",
+    title: "Tàu Amiral Latouche-Tréville",
+    category: "Hành trình cứu nước",
+    year: "05-06-1911",
     caption:
-      "Nguyễn Ái Quốc phát biểu tại Đại hội lần thứ XVIII Đảng Xã hội Pháp tại thành phố Tours tháng 12/1920, bỏ phiếu gia nhập Quốc tế III và tham gia sáng lập Đảng Cộng sản Pháp.",
-    author: "Báo L'Humanité (Pháp)",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Nguyen_Ai_Quoc_at_Tours_Congress_1920.jpg",
+      "Con tàu buôn của hãng vận tải Chargeurs Réunis — nơi người thanh niên Nguyễn Tất Thành nhận làm phụ bếp dưới tên Văn Ba để rời cảng Sài Gòn sang phương Tây.",
+    author: "Hãng vận tải biển Chargeurs Réunis",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:M_128_10_descente_de_l%27Himalaya_et_du_Latouche_Tr%C3%A9ville.jpg",
+    sourceLabel: "Latouche-Tréville – Wikimedia Commons",
   },
   {
     id: 6,
-    title: "Phố Hàng Buồm, Hà Nội đầu thế kỷ XX",
-    category: "Bối cảnh lịch sử",
-    year: "Đầu TK XX",
+    title: "Nguyễn Ái Quốc phát biểu tại Đại hội Tours (Pháp)",
+    category: "Hành trình cứu nước",
+    year: "12-1920",
     caption:
-      "Phố Hàng Buồm thời Pháp thuộc — phản ánh đời sống xã hội Việt Nam thời kỳ chuyển hóa dưới chính sách khai thác thuộc địa của thực dân Pháp.",
-    author: "Nhiếp ảnh gia Pierre Dieulefils",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Hanoi_Rue_des_Voiles.jpg",
+      "Nguyễn Ái Quốc đứng trên diễn đàn Đại hội toàn quốc lần thứ XVIII Đảng Xã hội Pháp tại thành phố Tours, bỏ phiếu tán thành Quốc tế Cộng sản và tham gia sáng lập Đảng Cộng sản Pháp.",
+    author: "Tư liệu Đảng Cộng sản Pháp",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Comrade_Nguyen_Ai_Quoc_at_the_national_congress_of_the_Socialist_Party_of_France_in_the_city_of_Tous,_France_in_December_1920.jpg",
+    sourceLabel: "Đại hội Tours 1920 – Wikimedia Commons",
   },
   {
     id: 7,
-    title: "Hội nghị Versailles và Khởi nghĩa Quốc tế",
-    category: "Bối cảnh thế giới",
-    year: "1919",
+    title: "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Ba Đình",
+    category: "Mốc son lịch sử",
+    year: "02-09-1945",
     caption:
-      "Hội nghị Hòa bình Versailles (1919) phân chia lại thế giới giữa các cường quốc thắng trận sau Chiến tranh thế giới thứ nhất — nơi Nguyễn Ái Quốc gửi Bản Yêu sách 8 điểm.",
-    author: "Thư viện Quốc hội Hoa Kỳ",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Versailles_Treaty_1919.jpg",
+      "Chủ tịch Hồ Chí Minh đứng trên lễ đài tại Quảng trường Ba Đình, Hà Nội đọc bản Tuyên ngôn Độc lập lịch sử, khai sinh nước Việt Nam Dân chủ Cộng hòa trước quốc dân và thế giới.",
+    author: "Việt Nam Độc lập Đồng minh Hội",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Pr%C3%A9sident_Ho-chi-Minh_lit_la_Proclamation-d%27ind%C3%A9pendance_sur_la_place_Ba-dinh_le_2nd_Sep_1945.jpg",
+    sourceLabel: "Tuyên ngôn Độc lập Ba Đình – Wikimedia Commons",
   },
   {
     id: 8,
-    title: "Tượng đài V.I. Lênin tại Moscow",
-    category: "Tiền đề tư tưởng",
-    year: "1920",
+    title: "Chân dung Chủ tịch Hồ Chí Minh năm 1946",
+    category: "Chân dung lãnh tụ",
+    year: "1946",
     caption:
-      "Chủ nghĩa Mác – Lênin và tư tưởng vĩ đại của V.I. Lênin là ngọn đèn pha soi đường đưa người thanh niên yêu nước Nguyễn Ái Quốc đến với chân lý cứu nước giải phóng dân tộc.",
-    author: "Tư liệu Thông tấn xã Liên Xô",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lenin_Monument_Moscow.jpg",
+      "Chân dung Chủ tịch Hồ Chí Minh năm 1946 trong những ngày đầu non sông vừa giành độc lập, thể hiện phong thái ung dung, ánh mắt sáng ngời và bản lĩnh phi thường.",
+    author: "Nhiếp ảnh gia vô danh",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_1946.jpg",
+    sourceLabel: "Chân dung Chủ tịch Hồ Chí Minh 1946 – Wikimedia Commons",
+  },
+  {
+    id: 9,
+    title: "Báo Le Paria (Người cùng khổ) xuất bản tại Paris năm 1922",
+    category: "Hành trình cứu nước",
+    year: "1922",
+    caption:
+      "Tờ báo tiếng nói của các dân tộc thuộc địa xuất bản tại thủ đô Paris do Nguyễn Ái Quốc làm chủ nhiệm kiêm chủ bút, vạch trần tội ác của chủ nghĩa thực dân và thức tỉnh phong trào giải phóng dân tộc.",
+    author: "Nguyễn Ái Quốc & Hội Liên hiệp Thuộc địa",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Le_Paria",
+    sourceLabel: "Le Paria – Wikipedia tiếng Việt",
+  },
+  {
+    id: 10,
+    title: "Trường Dục Thanh (Phan Thiết) — nơi thầy giáo Nguyễn Tất Thành dạy học",
+    category: "Địa danh lịch sử",
+    year: "1910",
+    caption:
+      "Khu di tích Trường Dục Thanh, thành phố Phan Thiết — nơi người thanh niên Nguyễn Tất Thành dừng chân dạy học chữ Quốc ngữ và truyền bá tinh thần yêu nước cho học sinh trước khi ra đi tìm đường cứu nước.",
+    author: "Tư liệu Khu di tích Trường Dục Thanh",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_D%E1%BB%A5c_Thanh",
+    sourceLabel: "Trường Dục Thanh – Wikipedia tiếng Việt",
+  },
+  {
+    id: 11,
+    title: "Chủ tịch Hồ Chí Minh và Bộ Chính trị duyệt kế hoạch tác chiến Điện Biên Phủ",
+    category: "Mốc son lịch sử",
+    year: "1953 - 1954",
+    caption:
+      "Tại căn cứ ATK Định Hóa (Thái Nguyên) cuối năm 1953, Chủ tịch Hồ Chí Minh cùng Đại tướng Võ Nguyên Giáp và các đồng chí trong Bộ Chính trị họp bàn thông qua quyết tâm mở Chiến dịch Điện Biên Phủ lịch sử.",
+    author: "Triệu Đại / Tư liệu TTXVN",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7",
+    sourceLabel: "Chiến dịch Điện Biên Phủ – Wikipedia tiếng Việt",
   },
 ];
 
 const DB_NAME = "VisualStorytellerContentDB";
-const DB_VERSION = 2;
+const DB_VERSION = 4;
 const STORE_NAME = "content_sections";
 
 class ContentDatabase {

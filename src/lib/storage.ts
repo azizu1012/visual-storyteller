@@ -9,7 +9,7 @@ export interface StoryItem {
   period: string;
   content: string;
   source: string;
-  imageUrl?: string;
+  imageUrl?: string | undefined;
   tags: string[];
   createdAt: string;
   updatedAt: string;
