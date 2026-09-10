@@ -770,10 +770,131 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     sourceUrl: "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
     sourceLabel: "Hồ Chí Minh – Wikipedia tiếng Việt",
   },
+  {
+    id: 18,
+    title: "Cầu Paul Doumer (Cầu Long Biên) thời kỳ khai thác thuộc địa tại Hà Nội",
+    category: "Bối cảnh xã hội",
+    year: "1898 - 1902",
+    caption:
+      "Cây cầu thép vắt qua sông Hồng do Pháp xây dựng, chứng nhân lịch sử tiêu biểu cho chính sách khai thác thuộc địa và sự chuyển biến xã hội Việt Nam đầu thế kỷ XX.",
+    author: "Nhiếp ảnh tư liệu thời Pháp thuộc",
+    sourceUrl: "https://vi.wikipedia.org/wiki/C%E1%BA%A7u_Long_Bi%C3%AAn",
+    sourceLabel: "Cầu Long Biên – Wikipedia tiếng Việt",
+  },
+  {
+    id: 19,
+    title: "Nhà tù Hỏa Lò (Maison Centrale) — Nơi giam giữ các chiến sĩ cách mạng",
+    category: "Bối cảnh xã hội",
+    year: "1896",
+    caption:
+      "Được thực dân Pháp xây dựng năm 1896 tại Hà Nội để đàn áp phong trào yêu nước, Hỏa Lò đã trở thành 'trường học cách mạng' tôi luyện ý chí kiên cường của bao thế hệ chiến sĩ cộng sản.",
+    author: "Tư liệu Di tích Lịch sử Nhà tù Hỏa Lò",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Nh%C3%A0_t%C3%B9_H%E1%BB%8Fa_L%C3%B2",
+    sourceLabel: "Nhà tù Hỏa Lò – Wikipedia tiếng Việt",
+  },
+  {
+    id: 20,
+    title: "Di tích Nhà tù Côn Đảo — 'Địa ngục trần gian' thời thực dân, đế quốc",
+    category: "Địa danh lịch sử",
+    year: "1862 - 1975",
+    caption:
+      "Hệ thống nhà tù khét tiếng ngoài khơi do thực dân Pháp thành lập từ năm 1862, nơi giam cầm và đày đọa hàng vạn nhà yêu nước và chiến sĩ cách mạng kiên trung của dân tộc.",
+    author: "Tư liệu Di tích Quốc gia đặc biệt Côn Đảo",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Nh%C3%A0_t%C3%B9_C%C3%B4n_%C4%90%E1%BA%A3o",
+    sourceLabel: "Nhà tù Côn Đảo – Wikipedia tiếng Việt",
+  },
+  {
+    id: 21,
+    title: "Cây đa Tân Trào (Tuyên Quang) — Nơi phát lệnh Tổng khởi nghĩa Tháng Tám 1945",
+    category: "Địa danh lịch sử",
+    year: "16-08-1945",
+    caption:
+      "Chiều 16/8/1945, dưới bóng cây đa Tân Trào lịch sử, đồng chí Võ Nguyên Giáp đọc Quân lệnh số 1 phát động Tổng khởi nghĩa giành chính quyền trên toàn quốc trong Cách mạng Tháng Tám.",
+    author: "Tư liệu Khu di tích Quốc gia đặc biệt Tân Trào",
+    sourceUrl: "https://vi.wikipedia.org/wiki/T%C3%A2n_Tr%C3%A0o_(chi%E1%BA%BFn_khu)",
+    sourceLabel: "Tân Trào (chiến khu) – Wikipedia tiếng Việt",
+  },
+  {
+    id: 22,
+    title: "Đình Tân Trào — Nơi họp Quốc dân Đại hội tháng 8/1945",
+    category: "Địa danh lịch sử",
+    year: "16–17/08/1945",
+    caption:
+      "Nơi diễn ra Quốc dân Đại hội do Mặt trận Việt Minh triệu tập, nhất trí tán thành chủ trương Tổng khởi nghĩa và bầu ra Ủy ban Dân tộc Giải phóng Việt Nam do Bác Hồ làm Chủ tịch.",
+    author: "Tư liệu Khu di tích Quốc gia đặc biệt Tân Trào",
+    sourceUrl: "https://vi.wikipedia.org/wiki/T%C3%A2n_Tr%C3%A0o_(chi%E1%BA%BFn_khu)",
+    sourceLabel: "Tân Trào (chiến khu) – Wikipedia tiếng Việt",
+  },
+  {
+    id: 23,
+    title: "Đồng chí Nguyễn Ái Quốc tại Liên Xô năm 1923",
+    category: "Hành trình cứu nước",
+    year: "1923",
+    caption:
+      "Năm 1923, Nguyễn Ái Quốc bí mật từ Paris sang Liên Xô — quê hương Cách mạng Tháng Mười, bắt đầu thời kỳ nghiên cứu lý luận Mác - Lênin tại Trường Đại học Phương Đông.",
+    author: "Tư liệu Viện Mác – Lênin (Mát-xcơ-va)",
+    sourceUrl: "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
+    sourceLabel: "Hồ Chí Minh – Wikipedia tiếng Việt",
+  },
+  {
+    id: 24,
+    title: "Đồng chí Nguyễn Ái Quốc tại Đại hội V Quốc tế Cộng sản (Mát-xcơ-va, 1924)",
+    category: "Bối cảnh thời đại",
+    year: "1924",
+    caption:
+      "Tại Đại hội V Quốc tế Cộng sản (Comintern) năm 1924, Nguyễn Ái Quốc phát biểu khẳng định tầm quan trọng chiến lược của phong trào cách mạng giải phóng dân tộc ở các nước thuộc địa.",
+    author: "Ban Chấp hành Quốc tế Cộng sản (Comintern)",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Qu%E1%BB%91c_t%E1%BA%BF_C%E1%BB%99ng_s%E1%BA%A3n",
+    sourceLabel: "Quốc tế Cộng sản – Wikipedia tiếng Việt",
+  },
+  {
+    id: 25,
+    title: "Báo 'Thanh Niên' (1925) — Cơ quan ngôn luận của Hội Việt Nam Cách mạng Thanh niên",
+    category: "Tiền đề lý luận",
+    year: "1925",
+    caption:
+      "Tờ báo cách mạng đầu tiên của Việt Nam do Nguyễn Ái Quốc sáng lập tại Quảng Châu (ra số đầu ngày 21/6/1925), truyền bá chủ nghĩa Mác - Lênin chuẩn bị thành lập Đảng.",
+    author: "Hội Việt Nam Cách mạng Thanh niên / Quảng Châu",
+    sourceUrl: "https://vi.wikipedia.org/wiki/B%C3%A1o_Thanh_ni%C3%AAn_(1925)",
+    sourceLabel: "Báo Thanh niên (1925) – Wikipedia tiếng Việt",
+  },
+  {
+    id: 26,
+    title: "Mít tinh lịch sử tại Nhà hát Lớn Hà Nội ngày 19/8/1945 (Cách mạng Tháng Tám)",
+    category: "Mốc son lịch sử",
+    year: "19-08-1945",
+    caption:
+      "Hàng vạn quần chúng nhân dân Hà Nội tràn ngập quảng trường Nhà hát Lớn, biến cuộc mít tinh thành biểu tình vũ trang khởi nghĩa giành chính quyền thắng lợi trọn vẹn.",
+    author: "Nhiếp ảnh gia Vũ Năng An & Nguyễn Bá Khoản / Tư liệu TTXVN",
+    sourceUrl: "https://vi.wikipedia.org/wiki/C%C3%A1ch_m%E1%BB%A1ng_Th%C3%A1ng_T%C3%A1m",
+    sourceLabel: "Cách mạng Tháng Tám – Wikipedia tiếng Việt",
+  },
+  {
+    id: 27,
+    title: "Toàn cảnh Hội nghị Genève năm 1954 về lập lại hòa bình ở Đông Dương",
+    category: "Mốc son lịch sử",
+    year: "1954",
+    caption:
+      "Hội nghị ngoại giao quốc tế lịch sử sau chiến thắng Điện Biên Phủ, buộc Pháp và các nước công nhận độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của ba nước Đông Dương.",
+    author: "Tư liệu Lưu trữ Quốc tế Thụy Sĩ / TTXVN",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Hi%E1%BB%87p_%C4%91%E1%BB%8Bnh_Gen%C3%A8ve,_1954",
+    sourceLabel: "Hiệp định Genève, 1954 – Wikipedia tiếng Việt",
+  },
+  {
+    id: 28,
+    title: "Bản thảo bút tích Di chúc thiêng liêng của Chủ tịch Hồ Chí Minh (1965 – 1969)",
+    category: "Tiền đề lý luận",
+    year: "1965 - 1969",
+    caption:
+      "Bảo vật quốc gia vô giá chứa đựng những lời căn dặn tâm huyết của Bác về xây dựng chỉnh đốn Đảng, tinh thần đoàn kết quốc tế, chăm lo đời sống nhân dân và niềm tin tất thắng.",
+    author: "Chủ tịch Hồ Chí Minh / Bảo tàng Hồ Chí Minh",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Di_ch%C3%BAc_H%E1%BB%93_Ch%C3%AD_Minh",
+    sourceLabel: "Di chúc Hồ Chí Minh – Wikipedia tiếng Việt",
+  },
 ];
 
 const DB_NAME = "VisualStorytellerContentDB";
-const DB_VERSION = 5;
+const DB_VERSION = 6;
 const STORE_NAME = "content_sections";
 
 class ContentDatabase {

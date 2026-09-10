@@ -37,9 +37,9 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
     });
   });
 
-  it("should provide 17 authentic historical photos with valid categories and Pho Hang Buom wiki link", async () => {
+  it("should provide 28 authentic historical photos with valid categories and Pho Hang Buom wiki link", async () => {
     const result = await contentDatabase.getTuLieuAnhContent();
-    expect(result.data).toHaveLength(17);
+    expect(result.data).toHaveLength(28);
 
     // Verify Pho Hang Buom
     const hangBuom = result.data.find((p) => p.id === 2);
@@ -50,52 +50,62 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
     expect(hangBuom?.sourceLabel).toBe("Phố Hàng Buồm – Wikipedia tiếng Việt");
 
     // Verify newly added historical milestones
-    const leParia = result.data.find((p) => p.id === 9);
-    expect(leParia).toBeDefined();
-    expect(leParia?.title).toContain("Le Paria");
-    expect(leParia?.category).toBe("Hành trình cứu nước");
+    const cauLongBien = result.data.find((p) => p.id === 18);
+    expect(cauLongBien).toBeDefined();
+    expect(cauLongBien?.title).toContain("Cầu Paul Doumer");
+    expect(cauLongBien?.category).toBe("Bối cảnh xã hội");
 
-    const ducThanh = result.data.find((p) => p.id === 10);
-    expect(ducThanh).toBeDefined();
-    expect(ducThanh?.title).toContain("Trường Dục Thanh");
-    expect(ducThanh?.category).toBe("Địa danh lịch sử");
+    const hoaLo = result.data.find((p) => p.id === 19);
+    expect(hoaLo).toBeDefined();
+    expect(hoaLo?.title).toContain("Hỏa Lò");
+    expect(hoaLo?.category).toBe("Bối cảnh xã hội");
 
-    const dienBienPhu = result.data.find((p) => p.id === 11);
-    expect(dienBienPhu).toBeDefined();
-    expect(dienBienPhu?.title).toContain("Điện Biên Phủ");
-    expect(dienBienPhu?.category).toBe("Mốc son lịch sử");
+    const conDao = result.data.find((p) => p.id === 20);
+    expect(conDao).toBeDefined();
+    expect(conDao?.title).toContain("Côn Đảo");
+    expect(conDao?.category).toBe("Địa danh lịch sử");
 
-    const duongKachMenh = result.data.find((p) => p.id === 12);
-    expect(duongKachMenh).toBeDefined();
-    expect(duongKachMenh?.title).toContain("Đường Kách mệnh");
-    expect(duongKachMenh?.category).toBe("Tiền đề lý luận");
+    const cayDaTanTrao = result.data.find((p) => p.id === 21);
+    expect(cayDaTanTrao).toBeDefined();
+    expect(cayDaTanTrao?.title).toContain("Cây đa Tân Trào");
+    expect(cayDaTanTrao?.category).toBe("Địa danh lịch sử");
 
-    const banAn = result.data.find((p) => p.id === 13);
-    expect(banAn).toBeDefined();
-    expect(banAn?.title).toContain("Bản án chế độ thực dân Pháp");
-    expect(banAn?.category).toBe("Tiền đề lý luận");
+    const dinhTanTrao = result.data.find((p) => p.id === 22);
+    expect(dinhTanTrao).toBeDefined();
+    expect(dinhTanTrao?.title).toContain("Đình Tân Trào");
+    expect(dinhTanTrao?.category).toBe("Địa danh lịch sử");
 
-    const bienGioi = result.data.find((p) => p.id === 14);
-    expect(bienGioi).toBeDefined();
-    expect(bienGioi?.title).toContain("Chiến dịch Biên giới");
-    expect(bienGioi?.category).toBe("Mốc son lịch sử");
+    const nguyenAiQuocLienXo = result.data.find((p) => p.id === 23);
+    expect(nguyenAiQuocLienXo).toBeDefined();
+    expect(nguyenAiQuocLienXo?.title).toContain("Liên Xô năm 1923");
+    expect(nguyenAiQuocLienXo?.category).toBe("Hành trình cứu nước");
 
-    const loiKeuGoi = result.data.find((p) => p.id === 15);
-    expect(loiKeuGoi).toBeDefined();
-    expect(loiKeuGoi?.title).toContain("Lời kêu gọi Toàn quốc kháng chiến");
-    expect(loiKeuGoi?.category).toBe("Mốc son lịch sử");
+    const quocTeCongSan = result.data.find((p) => p.id === 24);
+    expect(quocTeCongSan).toBeDefined();
+    expect(quocTeCongSan?.title).toContain("Đại hội V Quốc tế Cộng sản");
+    expect(quocTeCongSan?.category).toBe("Bối cảnh thời đại");
 
-    const benNhaRong = result.data.find((p) => p.id === 16);
-    expect(benNhaRong).toBeDefined();
-    expect(benNhaRong?.title).toContain("Bến Nhà Rồng");
-    expect(benNhaRong?.category).toBe("Địa danh lịch sử");
+    const baoThanhNien = result.data.find((p) => p.id === 25);
+    expect(baoThanhNien).toBeDefined();
+    expect(baoThanhNien?.title).toContain("Báo 'Thanh Niên'");
+    expect(baoThanhNien?.category).toBe("Tiền đề lý luận");
 
-    const thieuNhi = result.data.find((p) => p.id === 17);
-    expect(thieuNhi).toBeDefined();
-    expect(thieuNhi?.title).toContain("thiếu nhi");
-    expect(thieuNhi?.category).toBe("Chân dung lãnh tụ");
+    const mitTinh = result.data.find((p) => p.id === 26);
+    expect(mitTinh).toBeDefined();
+    expect(mitTinh?.title).toContain("Nhà hát Lớn Hà Nội");
+    expect(mitTinh?.category).toBe("Mốc son lịch sử");
 
-    // Verify every filter category has matching items
+    const geneva = result.data.find((p) => p.id === 27);
+    expect(geneva).toBeDefined();
+    expect(geneva?.title).toContain("Hội nghị Genève");
+    expect(geneva?.category).toBe("Mốc son lịch sử");
+
+    const diChuc = result.data.find((p) => p.id === 28);
+    expect(diChuc).toBeDefined();
+    expect(diChuc?.title).toContain("Di chúc thiêng liêng");
+    expect(diChuc?.category).toBe("Tiền đề lý luận");
+
+    // Verify every filter category has at least 2 matching items
     const expectedCategories = [
       "Địa danh lịch sử",
       "Bối cảnh xã hội",
@@ -108,7 +118,7 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
 
     expectedCategories.forEach((cat) => {
       const itemsInCat = result.data.filter((p) => p.category === cat);
-      expect(itemsInCat.length).toBeGreaterThan(0);
+      expect(itemsInCat.length).toBeGreaterThanOrEqual(2);
     });
   });
 });

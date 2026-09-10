@@ -30,6 +30,17 @@ import chienDichBienGioi from "@/assets/chien-dich-bien-gioi-1950.jpg";
 import loiKeuGoi from "@/assets/loi-keu-goi-khang-chien-1946.jpg";
 import benNhaRong from "@/assets/ben-nha-rong.jpg";
 import bacHoThieuNhi from "@/assets/bac-ho-thieu-nhi.jpg";
+import cauLongBien from "@/assets/cau-long-bien-paul-doumer.jpg";
+import nhaTuHoaLo from "@/assets/nha-tu-hoa-lo.jpg";
+import nhaTuConDao from "@/assets/nha-tu-con-dao.jpg";
+import cayDaTanTrao from "@/assets/cay-da-tan-trao.jpg";
+import dinhTanTrao from "@/assets/dinh-tan-trao.jpg";
+import nguyenAiQuocLienXo from "@/assets/nguyen-ai-quoc-lien-xo-1923.jpg";
+import nguyenAiQuocQuocTe from "@/assets/nguyen-ai-quoc-quoc-te-cong-san-1924.jpg";
+import baoThanhNien from "@/assets/bao-thanh-nien-1925.jpg";
+import mitTinhNhaHatLon from "@/assets/mit-tinh-nha-hat-lon-1945.jpg";
+import hoiNghiGeneva from "@/assets/hoi-nghi-geneva-1954.jpg";
+import diChucHoChiMinh from "@/assets/di-chuc-ho-chi-minh.png";
 
 export const Route = createFileRoute("/tu-lieu-anh")({
   head: () => ({
@@ -67,6 +78,17 @@ const PHOTO_ASSETS: Record<number, string> = {
   15: loiKeuGoi,
   16: benNhaRong,
   17: bacHoThieuNhi,
+  18: cauLongBien,
+  19: nhaTuHoaLo,
+  20: nhaTuConDao,
+  21: cayDaTanTrao,
+  22: dinhTanTrao,
+  23: nguyenAiQuocLienXo,
+  24: nguyenAiQuocQuocTe,
+  25: baoThanhNien,
+  26: mitTinhNhaHatLon,
+  27: hoiNghiGeneva,
+  28: diChucHoChiMinh,
 };
 
 const PHOTOS: PhotoDoc[] = BASE_TU_LIEU_ANH_DATA.map((item) => ({
