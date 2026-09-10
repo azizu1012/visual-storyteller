@@ -188,8 +188,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Tổ chức quốc tế",
       work: "Diễn văn bế mạc Phiên họp Quốc tế về Chủ tịch Hồ Chí Minh",
       text: "Bất cứ nơi nào nhân dân chiến đấu cho tự do và độc lập, ở đó có hình ảnh của Hồ Chí Minh. Người không chỉ thuộc về Việt Nam, Người thuộc về toàn thể nhân loại tiến bộ đang đấu tranh vì hòa bình và phẩm giá con người.",
-      sourceLabel: "Báo Nhân Dân",
-      sourceUrl: "https://nhandan.vn/chu-tich-ho-chi-minh-trong-trai-tim-ban-be-quoc-te-post646702.html",
+      sourceLabel: "Wikipedia & Học giả",
+      sourceUrl: "https://en.wikipedia.org/wiki/Romesh_Chandra",
     },
     {
       id: "halberstam",
@@ -243,8 +243,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Chính khách thế giới",
       work: "Tuyên bố lịch sử tưởng niệm Chủ tịch Hồ Chí Minh (1969) và chuyến thăm Quảng Trị (1973)",
       text: "Chủ tịch Hồ Chí Minh thuộc về một lớp người đặc biệt mà cái chết lại gieo mầm cho sự sống, đời đời bất tử trong lòng các dân tộc yêu chuộng tự do và độc lập trên toàn thế giới.",
-      sourceLabel: "Báo Nhân Dân",
-      sourceUrl: "https://nhandan.vn/chu-tich-ho-chi-minh-trong-trai-tim-lanh-tu-fidel-castro-post304523.html",
+      sourceLabel: "Wikipedia",
+      sourceUrl: "https://vi.wikipedia.org/wiki/Fidel_Castro",
     },
     {
       id: "mandelstam",
@@ -476,8 +476,8 @@ export const BASE_QUA_TRINH_DATA: QuaTrinhContent = {
         },
         {
           text: "Trở về Tổ quốc tại hang Pác Bó (Cao Bằng, 1941), chỉ đạo thành lập Mặt trận Việt Minh.",
-          sourceUrl: "https://nhandan.vn/hang-pac-bo-di-tich-lich-su-dac-biet-quoc-gia-post632901.html",
-          sourceLabel: "Báo Nhân Dân",
+          sourceUrl: "https://vi.wikipedia.org/wiki/P%C3%A1c_B%C3%B3",
+          sourceLabel: "Wikipedia",
         },
         {
           text: "Lãnh đạo thắng lợi Cách mạng Tháng Tám và đọc Tuyên ngôn Độc lập khai sinh nước VNDCCH (1945).",

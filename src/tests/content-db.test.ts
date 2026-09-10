@@ -141,6 +141,7 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
         expect(evt.sourceUrl).toMatch(/^https?:\/\//);
         expect(evt.sourceUrl).not.toContain("dangcongsan.vn"); // no timeouts
         expect(evt.sourceUrl).not.toContain("qdnd.vn"); // no failed fetches
+        expect(evt.sourceUrl).not.toContain("nhandan.vn"); // no reindexed/misdirected news links
         expect(evt.sourceLabel).toBeDefined();
         expect(evt.sourceLabel?.length).toBeGreaterThan(0);
       });

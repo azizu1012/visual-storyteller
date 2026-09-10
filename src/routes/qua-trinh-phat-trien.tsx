@@ -115,8 +115,8 @@ const PERIODS: PeriodItem[] = [
       {
         text: "1911 – 1917: Bôn ba qua nhiều nước ở châu Âu, châu Phi, châu Mỹ; thấu hiểu bản chất chủ nghĩa đế quốc.",
         sourceUrl:
-          "https://nhandan.vn/hanh-trinh-30-nam-tim-duong-cuu-nuoc-cua-nguyen-tat-thanh-post649313.html",
-        sourceLabel: "Báo Nhân Dân",
+          "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh#Ra_%C4%91i_t%C3%ACm_%C4%91%C6%B0%E1%BB%9Dng_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+        sourceLabel: "Wikipedia",
       },
       {
         text: "1919: Thay mặt nhóm người Việt Nam yêu nước tại Pháp gửi 'Bản Yêu sách của nhân dân An Nam' đến Hội nghị Versailles.",
@@ -199,8 +199,8 @@ const PERIODS: PeriodItem[] = [
       },
       {
         text: "1934 – 1938: Học tập và nghiên cứu tại Viện Nghiên cứu các vấn đề dân tộc và thuộc địa ở Mát-xcơ-va.",
-        sourceUrl: "https://nhandan.vn/thoi-ky-nguyen-ai-quoc-o-lien-xo-1934-1938-post702143.html",
-        sourceLabel: "Báo Nhân Dân",
+        sourceUrl: "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh#%E1%BB%9E_Li%C3%AAn_X%C3%B4_l%E1%BA%A7n_th%E1%BB%A9_hai_%281934%E2%80%931938%29",
+        sourceLabel: "Wikipedia",
       },
       {
         text: "1935: Đại hội VII Quốc tế Cộng sản chuyển hướng chiến lược lập Mặt trận Dân chủ chống phát xít, khẳng định quan điểm của Người là chính xác.",
@@ -210,7 +210,7 @@ const PERIODS: PeriodItem[] = [
       {
         text: "28-01-1941: Vượt mốc 108 biên giới Việt – Trung trở về hang Cốc Bó, Pác Bó (Cao Bằng) trực tiếp lãnh đạo cách mạng.",
         sourceUrl: "https://vi.wikipedia.org/wiki/P%C3%A1c_B%C3%B3",
-        sourceLabel: "Báo Nhân Dân",
+        sourceLabel: "Wikipedia",
       },
     ],
     significance:
@@ -252,8 +252,8 @@ const PERIODS: PeriodItem[] = [
       },
       {
         text: "1954 – 1969: Lãnh đạo đồng thời hai chiến lược cách mạng: xây dựng CNXH ở miền Bắc và kháng chiến chống Mỹ ở miền Nam.",
-        sourceUrl: "https://nhandan.vn/bac-ho-voi-su-nghiep-xay-dung-chu-nghia-xa-hoi-o-mien-bac-post602951.html",
-        sourceLabel: "Báo Nhân Dân",
+        sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_tranh_Vi%E1%BB%87t_Nam",
+        sourceLabel: "Wikipedia",
       },
       {
         text: "1969: Để lại bản Di chúc lịch sử kết tinh đạo đức, trí tuệ và khát vọng hòa bình cho toàn dân tộc.",
