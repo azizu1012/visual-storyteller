@@ -78,7 +78,7 @@ function LuanBanPage() {
             {content?.eyebrow || "Luận bàn lịch sử"}
           </span>
         </div>
-        <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+        <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground break-words">
           {content?.title || "Hai mặt của một thời đại"}
         </h1>
         <p className="max-w-3xl text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed">

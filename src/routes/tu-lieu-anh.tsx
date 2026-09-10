@@ -137,7 +137,7 @@ function TuLieuAnhPage() {
           <span className="h-px w-10 bg-gold" />
           <span className="eyebrow text-gold text-xs">Kho lưu trữ số</span>
         </div>
-        <h1 className="font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+        <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground break-words">
           Thư viện tư liệu ảnh lịch sử
         </h1>
         <p className="max-w-3xl text-base sm:text-lg text-muted-foreground leading-relaxed">
@@ -147,7 +147,7 @@ function TuLieuAnhPage() {
       </div>
 
       {/* Category Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2">
+      <div className="flex items-center gap-2 overflow-x-auto pb-2 max-w-full touch-pan-x">
         {categories.map((cat) => {
           const count = cat === "all" ? photos.length : photos.filter((p) => p.category === cat).length;
           return (
@@ -238,7 +238,7 @@ function TuLieuAnhPage() {
       {/* Lightbox / Detail Dialog */}
       <Dialog open={!!selectedPhoto} onOpenChange={(open) => !open && setSelectedPhoto(null)}>
         {selectedPhoto && (
-          <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto p-6">
+          <DialogContent className="w-[94vw] max-w-2xl max-h-[90vh] overflow-y-auto p-4 sm:p-6 rounded-2xl">
             <DialogHeader className="space-y-2">
               <div className="flex items-center gap-2">
                 <Badge variant="outline" className="text-primary border-primary/30">
@@ -248,7 +248,7 @@ function TuLieuAnhPage() {
                   Năm {selectedPhoto.year}
                 </span>
               </div>
-              <DialogTitle className="font-display text-2xl font-bold text-foreground">
+              <DialogTitle className="font-display text-lg sm:text-2xl font-bold text-foreground break-words leading-snug">
                 {selectedPhoto.title}
               </DialogTitle>
               <DialogDescription className="text-xs text-muted-foreground">

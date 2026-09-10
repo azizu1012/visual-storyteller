@@ -41,7 +41,7 @@ function MobileDedicatedPage() {
   const quickStats = [
     { label: "Thời kỳ", value: "5 mốc" },
     { label: "Trụ cột", value: "3 cơ sở" },
-    { label: "Ảnh tư liệu", value: "8 ảnh quý" },
+    { label: "Ảnh tư liệu", value: "28 ảnh quý" },
   ];
 
   return (

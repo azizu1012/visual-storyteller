@@ -80,7 +80,7 @@ const TOPICS = [
     icon: ImageIcon,
     image: tk1945,
     desc: "Tổng hợp bộ sưu tập hình ảnh tư liệu lịch sử quý báu, nguồn ảnh Wikimedia Commons và chú thích xuất xứ chi tiết.",
-    highlights: ["8 ảnh tư liệu kinh điển", "Xem phóng to Lightbox", "Nguồn gốc rõ ràng"],
+    highlights: ["28 ảnh tư liệu kinh điển", "Xem phóng to Lightbox", "Nguồn gốc rõ ràng"],
   },
 ];
 
@@ -105,7 +105,7 @@ function HomePage() {
               </span>
             </div>
 
-            <h1 className="font-display fluid-hero-title font-bold tracking-tight text-parchment leading-[1.08]">
+            <h1 className="font-display fluid-hero-title font-bold tracking-tight text-parchment leading-[1.12] break-words">
               Cơ sở, quá trình và giá trị tư tưởng Hồ Chí Minh
             </h1>
 
@@ -153,20 +153,20 @@ function HomePage() {
             </div>
 
             {/* Quick Stats Grid */}
-            <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-parchment/20 pt-8 max-w-lg">
+            <dl className="mt-8 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-6 border-t border-parchment/20 pt-6 sm:pt-8 max-w-lg">
               <div>
-                <dt className="font-display text-3xl sm:text-4xl font-bold text-gold">1858</dt>
-                <dd className="eyebrow mt-1 text-[0.68rem] text-parchment/60">Pháp nổ súng</dd>
+                <dt className="font-display text-2xl sm:text-4xl font-bold text-gold">1858</dt>
+                <dd className="eyebrow mt-1 text-[0.62rem] sm:text-[0.68rem] text-parchment/60">Pháp nổ súng</dd>
               </div>
               <div>
-                <dt className="font-display text-3xl sm:text-4xl font-bold text-gold">05</dt>
-                <dd className="eyebrow mt-1 text-[0.68rem] text-parchment/60">
+                <dt className="font-display text-2xl sm:text-4xl font-bold text-gold">05</dt>
+                <dd className="eyebrow mt-1 text-[0.62rem] sm:text-[0.68rem] text-parchment/60">
                   Thời kỳ phát triển
                 </dd>
               </div>
               <div>
-                <dt className="font-display text-3xl sm:text-4xl font-bold text-gold">1969</dt>
-                <dd className="eyebrow mt-1 text-[0.68rem] text-parchment/60">Di chúc lịch sử</dd>
+                <dt className="font-display text-2xl sm:text-4xl font-bold text-gold">1969</dt>
+                <dd className="eyebrow mt-1 text-[0.62rem] sm:text-[0.68rem] text-parchment/60">Di chúc lịch sử</dd>
               </div>
             </dl>
           </div>
@@ -203,7 +203,7 @@ function HomePage() {
             <span className="h-px w-10 bg-primary" />
             <span className="eyebrow text-primary text-xs">Chỉ mục chuyên đề</span>
           </div>
-          <h2 className="font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-foreground break-words">
             Các nội dung nghiên cứu trọng tâm
           </h2>
           <p className="text-sm text-muted-foreground max-w-2xl">

@@ -115,7 +115,7 @@ function GiaTriTuTuongPage() {
           <span className="h-px w-10 bg-gold" />
           <span className="eyebrow text-gold text-xs">{content?.eyebrow || "Tầm vóc & Ý nghĩa"}</span>
         </div>
-        <h1 className="font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+        <h1 className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground break-words">
           {content?.title || "Giá trị tư tưởng Hồ Chí Minh"}
         </h1>
         <p className="max-w-3xl text-base sm:text-lg text-muted-foreground leading-relaxed">

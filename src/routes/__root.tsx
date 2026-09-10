@@ -133,9 +133,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex min-h-screen flex-col bg-background text-foreground selection:bg-accent/20 selection:text-foreground">
+      <div className="flex min-h-screen flex-col bg-background text-foreground selection:bg-accent/20 selection:text-foreground w-full max-w-full overflow-x-hidden">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 w-full max-w-full overflow-x-hidden min-w-0">
           <PageTransition>
             <Outlet />
           </PageTransition>
