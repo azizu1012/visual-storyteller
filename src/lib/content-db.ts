@@ -221,8 +221,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Nhà văn & Nhà báo",
       work: "Khảo cứu lịch sử về các phong trào giải phóng dân tộc Á - Phi thế kỷ XX",
       text: "Hồ Chí Minh là biểu tượng của sự giản dị thanh cao, sức mạnh không gì khuất phục nổi của một con người đặt độc lập của Tổ quốc và hạnh phúc của nhân dân lên trên tất cả.",
-      sourceLabel: "Tạp chí Tuyên giáo",
-      sourceUrl: "https://tuyengiao.vn/chu-tich-ho-chi-minh-trong-long-ban-be-quoc-te-139821",
+      sourceLabel: "Wikipedia & Học giả",
+      sourceUrl: "https://en.wikipedia.org/wiki/Han_Suyin",
     },
     {
       id: "de-gaulle",
@@ -232,8 +232,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Chính khách thế giới",
       work: "Tuyên bố ngoại giao chính thức và hồi ký chính trị lịch sử",
       text: "Hồ Chí Minh là một nhân cách phi thường, một người con kiệt xuất của nhân dân Việt Nam, người đã kiên định suốt cuộc đời vì độc lập và tự do của dân tộc mình.",
-      sourceLabel: "Báo Quân đội Nhân dân",
-      sourceUrl: "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/nhung-nhan-dinh-quoc-te-ve-ho-chi-minh-665241",
+      sourceLabel: "Wikipedia",
+      sourceUrl: "https://vi.wikipedia.org/wiki/Charles_de_Gaulle",
     },
     {
       id: "fidel",
@@ -254,8 +254,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Nhà văn & Nhà báo",
       work: "Ký sự 'Thăm một chiến sĩ Quốc tế Cộng sản: Nguyễn Ái Quốc' (Tạp chí Ogoniok số 39, 1923)",
       text: "Từ Nguyễn Ái Quốc tỏa ra một thứ văn hóa, không phải văn hóa Âu châu, mà có lẽ là một nền văn hóa của tương lai... Qua cử chỉ cao thượng, tiếng nói trầm ấm của Người, chúng ta như thấy được ngày mai, thấy được viễn cảnh hòa bình của toàn thế giới.",
-      sourceLabel: "Báo Nhân Dân",
-      sourceUrl: "https://nhandan.vn/tu-nguyen-ai-quoc-toa-ra-mot-nen-van-hoa-cua-tuong-lai-post784747.html",
+      sourceLabel: "Wikipedia",
+      sourceUrl: "https://vi.wikipedia.org/wiki/Osip_Emilyevich_Mandelstam",
     },
     {
       id: "brockway",
@@ -265,8 +265,8 @@ export const BASE_LUAN_BAN_DATA: LuanBanContent = {
       category: "Chính khách thế giới",
       work: "Phát biểu tại Diễn đàn Quốc tế đoàn kết với nhân dân Việt Nam",
       text: "Hồ Chí Minh là một trong những nhân vật vĩ đại nhất của thời đại chúng ta. Người đã cống hiến trọn cuộc đời vì nền độc lập của dân tộc và vì hòa bình, phẩm giá của loài người.",
-      sourceLabel: "Báo Điện tử ĐCSVN",
-      sourceUrl: "https://dangcongsan.vn/tu-tuong-van-hoa/ho-chi-minh-trong-long-nhan-dan-the-gioi-554867.html",
+      sourceLabel: "Wikipedia",
+      sourceUrl: "https://en.wikipedia.org/wiki/Fenner_Brockway",
     },
   ],
 };
@@ -282,7 +282,7 @@ export const BASE_CO_SO_DATA: CoSoContent = {
     {
       title: "Sự xâm lược của thực dân Pháp (1858)",
       desc: "Thực dân Pháp nổ súng xâm lược Việt Nam; triều đình phong kiến nhà Nguyễn từng bước đầu hàng, ký kết các hiệp ước bất bình đẳng và trở thành tay sai cho chính quyền thực dân.",
-      sourceUrl: "https://vi.wikipedia.org/wiki/Tr%E1%BA%ADn_%C4%90%C3%A0_N%E1%BA%B5ng_(1858)",
+      sourceUrl: "https://vi.wikipedia.org/wiki/Tr%E1%BA%ADn_%C4%90%C3%A0_N%E1%BA%B5ng",
       sourceLabel: "Wikipedia",
     },
     {
@@ -294,7 +294,7 @@ export const BASE_CO_SO_DATA: CoSoContent = {
     {
       title: "Giai cấp công nhân Việt Nam bước lên vũ đài",
       desc: "Sự xuất hiện và phát triển của giai cấp công nhân cùng phong trào đấu tranh tự phát chuyển sang tự giác đã tạo mảnh đất xã hội màu mỡ cho sự tiếp nhận và truyền bá chủ nghĩa Mác – Lênin.",
-      sourceUrl: "https://vi.wikipedia.org/wiki/Giai_c%E1%BA%A5p_c%C3%B4ng_nh%C3%A2n_Vi%E1%BB%87t_Nam",
+      sourceUrl: "https://vi.wikipedia.org/wiki/Giai_c%E1%BA%A5p_c%C3%B4ng_nh%C3%A2n",
       sourceLabel: "Wikipedia",
     },
   ],
@@ -392,7 +392,7 @@ export const BASE_QUA_TRINH_DATA: QuaTrinhContent = {
         },
         {
           text: "Học tập chữ Hán, chữ Quốc ngữ và Pháp văn tại trường Quốc học Huế; tham gia phong trào chống thuế ở Trung Kỳ (1908).",
-          sourceUrl: "https://vi.wikipedia.org/wiki/Phong_tr%C3%A0o_ch%E1%BB%91ng_thu%E1%BA%BF_Trung_K%E1%BB%B3",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Phong_tr%C3%A0o_ch%E1%BB%91ng_s%C6%B0u_thu%E1%BA%BF_Trung_K%E1%BB%B3_1908",
           sourceLabel: "Wikipedia",
         },
         {
@@ -415,18 +415,18 @@ export const BASE_QUA_TRINH_DATA: QuaTrinhContent = {
       keyEvents: [
         {
           text: "Rời cảng Sài Gòn trên tàu Amiral Latouche-Tréville ra đi tìm đường cứu nước (05-06-1911).",
-          sourceUrl: "https://nhandan.vn/hanh-trinh-30-nam-tim-duong-cuu-nuoc-cua-nguyen-tat-thanh-post649313.html",
-          sourceLabel: "Báo Nhân Dân",
+          sourceUrl: "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Nh%C3%A0_R%E1%BB%93ng",
+          sourceLabel: "Wikipedia",
         },
         {
           text: "Gửi bản 'Yêu sách của nhân dân An Nam' tới Hội nghị Hòa bình Versailles (1919) ký tên Nguyễn Ái Quốc.",
-          sourceUrl: "https://vi.wikipedia.org/wiki/B%E1%BA%A3n_Y%C3%AAu_s%C3%A1ch_c%E1%BB%A7a_nh%C3%A2n_d%C3%A2n_An_Nam",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Y%C3%AAu_s%C3%A1ch_c%E1%BB%A7a_nh%C3%A2n_d%C3%A2n_An_Nam",
           sourceLabel: "Wikipedia",
         },
         {
           text: "Đọc Sơ thảo Luận cương của Lênin (7/1920) và bỏ phiếu tán thành Quốc tế III tại Đại hội Tours (12/1920).",
-          sourceUrl: "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/v-i-lenin/tac-pham/so-thao-lan-thu-nhat-nhung-luan-cuong-ve-van-de-dan-toc-va-van-de-thuoc-dia-1077",
-          sourceLabel: "Tư liệu Đảng",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Lenin",
+          sourceLabel: "Wikipedia",
         },
       ],
       significance:
@@ -453,8 +453,8 @@ export const BASE_QUA_TRINH_DATA: QuaTrinhContent = {
         },
         {
           text: "Chủ trì Hội nghị hợp nhất, thành lập Đảng Cộng sản Việt Nam mùa xuân năm 1930.",
-          sourceUrl: "https://dangcongsan.vn/tu-tuong-van-hoa/dang-cong-san-viet-nam-ra-doi-buoc-ngoat-lich-su-vi-dai-548123.html",
-          sourceLabel: "Báo Điện tử ĐCSVN",
+          sourceUrl: "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A3ng_C%E1%BB%99ng_s%E1%BA%A3n_Vi%E1%BB%87t_Nam",
+          sourceLabel: "Wikipedia",
         },
       ],
       significance:
@@ -499,18 +499,18 @@ export const BASE_QUA_TRINH_DATA: QuaTrinhContent = {
       keyEvents: [
         {
           text: "Ra Lời kêu gọi Toàn quốc kháng chiến (1946) và lãnh đạo Chiến dịch Điện Biên Phủ toàn thắng (1954).",
-          sourceUrl: "https://www.qdnd.vn/tu-lieu-ho-so/chien-thang-dien-bien-phu/tin-tuc/y-nghia-lich-su-cua-chien-thang-dien-bien-phu-772191",
-          sourceLabel: "Báo QĐND",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7",
+          sourceLabel: "Wikipedia",
         },
         {
           text: "Đề xướng chân lý bất hủ: 'Không có gì quý hơn độc lập, tự do' (1966).",
-          sourceUrl: "https://nhandan.vn/khong-co-gi-quy-hon-doc-lap-tu-do-chan-ly-thoi-dai-post705701.html",
-          sourceLabel: "Báo Nhân Dân",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Kh%C3%B4ng_c%C3%B3_g%C3%AC_qu%C3%BD_h%C6%A1n_%C4%91%E1%BB%99c_l%E1%BA%ADp,_t%E1%BB%B1_do",
+          sourceLabel: "Wikipedia",
         },
         {
           text: "Bản Di chúc lịch sử thiêng liêng đúc kết trọn vẹn tư tưởng, đạo đức và tình cảm với toàn Đảng, toàn dân (1969).",
-          sourceUrl: "https://tulieuvankien.dangcongsan.vn/van-kien-tu-lieu-ve-dang/di-chuc-cua-chu-tich-ho-chi-minh",
-          sourceLabel: "Tư liệu Đảng",
+          sourceUrl: "https://vi.wikipedia.org/wiki/Di_ch%C3%BAc_H%E1%BB%93_Ch%C3%AD_Minh",
+          sourceLabel: "Wikipedia",
         },
       ],
       significance:

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { contentDatabase, BASE_LUAN_BAN_DATA } from "../lib/content-db";
+import { contentDatabase, BASE_LUAN_BAN_DATA, BASE_CO_SO_DATA, BASE_QUA_TRINH_DATA } from "../lib/content-db";
 
 describe("Content Database & Dynamic On-Demand Loading", () => {
   it("should contain authentic base content for THOI_THE (5 points)", () => {
@@ -119,6 +119,31 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
     expectedCategories.forEach((cat) => {
       const itemsInCat = result.data.filter((p) => p.category === cat);
       expect(itemsInCat.length).toBeGreaterThanOrEqual(2);
+    });
+  });
+
+  it("should have valid, non-empty canonical URLs across all historical foundations and timeline events", () => {
+    // Check BASE_CO_SO_DATA
+    BASE_CO_SO_DATA.thucTienVn.forEach((item) => {
+      expect(item.sourceUrl).toMatch(/^https?:\/\//);
+      expect(item.sourceUrl).not.toContain("(");
+      expect(item.sourceLabel).toBe("Wikipedia");
+    });
+    BASE_CO_SO_DATA.thucTienTg.forEach((item) => {
+      expect(item.sourceUrl).toMatch(/^https?:\/\//);
+      expect(item.sourceLabel).toBe("Wikipedia");
+    });
+
+    // Check BASE_QUA_TRINH_DATA
+    BASE_QUA_TRINH_DATA.periods.forEach((period) => {
+      expect(period.keyEvents.length).toBeGreaterThanOrEqual(3);
+      period.keyEvents.forEach((evt) => {
+        expect(evt.sourceUrl).toMatch(/^https?:\/\//);
+        expect(evt.sourceUrl).not.toContain("dangcongsan.vn"); // no timeouts
+        expect(evt.sourceUrl).not.toContain("qdnd.vn"); // no failed fetches
+        expect(evt.sourceLabel).toBeDefined();
+        expect(evt.sourceLabel?.length).toBeGreaterThan(0);
+      });
     });
   });
 });

@@ -81,7 +81,7 @@ const PERIODS: PeriodItem[] = [
       {
         text: "Tham gia phong trào chống thuế ở Trung Kỳ (1908), thấu hiểu nỗi thống khổ của người nông dân.",
         sourceUrl:
-          "https://vi.wikipedia.org/wiki/Phong_tr%C3%A0o_ch%E1%BB%91ng_thu%E1%BA%BF_%E1%BB%9F_Trung_K%E1%BB%B3_(1908)",
+          "https://vi.wikipedia.org/wiki/Phong_tr%C3%A0o_ch%E1%BB%91ng_s%C6%B0u_thu%E1%BA%BF_Trung_K%E1%BB%B3_1908",
         sourceLabel: "Wikipedia",
       },
       {
@@ -109,7 +109,7 @@ const PERIODS: PeriodItem[] = [
       {
         text: "05-06-1911: Nguyễn Tất Thành lấy tên Văn Ba, lên tàu Amiral Latouche-Tréville rời Sài Gòn sang Pháp.",
         sourceUrl:
-          "https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_T%E1%BA%A5t_Th%E1%BB%83nh_ra_%C4%91i_t%C3%ACm_%C4%91%C6%B0%E1%BB%9Dng_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+          "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Nh%C3%A0_R%E1%BB%93ng",
         sourceLabel: "Wikipedia",
       },
       {
@@ -126,12 +126,12 @@ const PERIODS: PeriodItem[] = [
       {
         text: "07-1920: Đọc 'Sơ thảo lần thứ nhất những luận cương...' của Lênin và tìm ra con đường giải phóng cho dân tộc.",
         sourceUrl:
-          "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/v-i-lenin/tac-pham/so-thao-lan-thu-nhat-nhung-luan-cuong-ve-van-de-dan-toc-va-van-de-thuoc-dia-1077",
-        sourceLabel: "Tư liệu Đảng",
+          "https://vi.wikipedia.org/wiki/Lenin",
+        sourceLabel: "Wikipedia",
       },
       {
         text: "12-1920: Tại Đại hội Tours, bỏ phiếu tán thành Quốc tế III, tham gia sáng lập Đảng Cộng sản Pháp.",
-        sourceUrl: "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%99i_Tours",
+        sourceUrl: "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A3ng_C%E1%BB%99ng_s%E1%BA%A3n_Ph%C3%A1p",
         sourceLabel: "Wikipedia",
       },
     ],
@@ -242,13 +242,13 @@ const PERIODS: PeriodItem[] = [
       {
         text: "02-09-1945: Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa.",
         sourceUrl:
-          "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_(Vi%E1%BB%87t_Nam)",
+          "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_Vi%E1%BB%87t_Nam",
         sourceLabel: "Wikipedia",
       },
       {
         text: "1946 – 1954: Đề ra đường lối kháng chiến toàn dân, toàn diện, trường kỳ, tự lực cánh sinh; làm nên chiến thắng Điện Biên Phủ 'lừng lẫy năm châu'.",
         sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7",
-        sourceLabel: "Báo QĐND",
+        sourceLabel: "Wikipedia",
       },
       {
         text: "1954 – 1969: Lãnh đạo đồng thời hai chiến lược cách mạng: xây dựng CNXH ở miền Bắc và kháng chiến chống Mỹ ở miền Nam.",
@@ -258,7 +258,7 @@ const PERIODS: PeriodItem[] = [
       {
         text: "1969: Để lại bản Di chúc lịch sử kết tinh đạo đức, trí tuệ và khát vọng hòa bình cho toàn dân tộc.",
         sourceUrl: "https://vi.wikipedia.org/wiki/Di_ch%C3%BAc_H%E1%BB%93_Ch%C3%AD_Minh",
-        sourceLabel: "Báo Nhân Dân",
+        sourceLabel: "Wikipedia",
       },
     ],
     significance:

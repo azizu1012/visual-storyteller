@@ -298,15 +298,14 @@ function HomePage() {
                 year: "1911",
                 title: "Rời Bến Nhà Rồng",
                 desc: "Xuất phát tìm đường cứu nước trên tàu Latouche-Tréville",
-                wikiUrl:
-                  "https://vi.wikipedia.org/wiki/Nguy%E1%BB%85n_T%E1%BA%A5t_Th%E1%BB%83nh_ra_%C4%91i_t%C3%ACm_%C4%91%C6%B0%E1%BB%9Dng_c%E1%BB%A9u_n%C6%B0%E1%BB%9Bc",
+                wikiUrl: "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Nh%C3%A0_R%E1%BB%93ng",
                 sourceName: "Wikipedia",
               },
               {
                 year: "1920",
                 title: "Đại hội Tours",
-                desc: "Tiếp cận Luận cương Lênin và gia nhập Quốc tế III",
-                wikiUrl: "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A1i_h%E1%BB%99i_Tours",
+                desc: "Tiếp cận Luận cương Lênin và sáng lập Đảng Cộng sản Pháp",
+                wikiUrl: "https://vi.wikipedia.org/wiki/%C4%90%E1%BA%A3ng_C%E1%BB%99ng_s%E1%BA%A3n_Ph%C3%A1p",
                 sourceName: "Wikipedia",
               },
               {
@@ -321,7 +320,7 @@ function HomePage() {
                 title: "Tuyên ngôn Độc lập",
                 desc: "Khai sinh nước Việt Nam Dân chủ Cộng hòa",
                 wikiUrl:
-                  "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_(Vi%E1%BB%87t_Nam)",
+                  "https://vi.wikipedia.org/wiki/Tuy%C3%AAn_ng%C3%B4n_%C4%91%E1%BB%99c_l%E1%BA%ADp_Vi%E1%BB%87t_Nam",
                 sourceName: "Wikipedia",
               },
             ].map((m) => (

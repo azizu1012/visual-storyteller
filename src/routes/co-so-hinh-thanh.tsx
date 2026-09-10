@@ -40,7 +40,7 @@ const THUC_TIEN_VN = [
   {
     title: "Sự xâm lược của thực dân Pháp (1858)",
     desc: "Thực dân Pháp nổ súng xâm lược Việt Nam; triều đình phong kiến nhà Nguyễn từng bước đầu hàng, ký kết các hiệp ước bất bình đẳng và trở thành tay sai cho chính quyền thực dân.",
-    sourceUrl: "https://vi.wikipedia.org/wiki/Tr%E1%BA%ADn_%C4%90%C3%A0_N%E1%BA%B5ng_(1858)",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Tr%E1%BA%ADn_%C4%90%C3%A0_N%E1%BA%B5ng",
     sourceLabel: "Wikipedia",
   },
   {
@@ -52,7 +52,7 @@ const THUC_TIEN_VN = [
   {
     title: "Giai cấp công nhân Việt Nam bước lên vũ đài",
     desc: "Sự xuất hiện và phát triển của giai cấp công nhân cùng phong trào đấu tranh tự phát chuyển sang tự giác đã tạo mảnh đất xã hội màu mỡ cho sự tiếp nhận và truyền bá chủ nghĩa Mác – Lênin.",
-    sourceUrl: "https://vi.wikipedia.org/wiki/Giai_c%E1%BA%A5p_c%C3%B4ng_nh%C3%A2n_Vi%E1%BB%87t_Nam",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Giai_c%E1%BA%A5p_c%C3%B4ng_nh%C3%A2n",
     sourceLabel: "Wikipedia",
   },
 ];
