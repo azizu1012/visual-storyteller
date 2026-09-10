@@ -704,10 +704,76 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_%C4%90i%E1%BB%87n_Bi%C3%AAn_Ph%E1%BB%A7",
     sourceLabel: "Chiến dịch Điện Biên Phủ – Wikipedia tiếng Việt",
   },
+  {
+    id: 12,
+    title: "Tác phẩm 'Đường Kách mệnh' của Nguyễn Ái Quốc",
+    category: "Tiền đề lý luận",
+    year: "1927",
+    caption:
+      "Cuốn sách tập hợp các bài giảng huấn luyện cán bộ của Nguyễn Ái Quốc tại Quảng Châu (Trung Quốc), chuẩn bị về mặt chính trị, tư tưởng và tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam năm 1930.",
+    author: "Bộ Tuyên truyền Hội Liên hiệp các Dân tộc Bị áp bức Á Đông",
+    sourceUrl: "https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_k%C3%A1ch_m%E1%BB%87nh",
+    sourceLabel: "Đường Kách mệnh – Wikipedia tiếng Việt",
+  },
+  {
+    id: 13,
+    title: "Tác phẩm 'Bản án chế độ thực dân Pháp' (Paris, 1925)",
+    category: "Tiền đề lý luận",
+    year: "1925",
+    caption:
+      "Tác phẩm chính luận đanh thép của Nguyễn Ái Quốc xuất bản lần đầu tại Paris năm 1925, vạch trần bản chất áp bức bóc lột dã man của thực dân Pháp đối với các dân tộc thuộc địa.",
+    author: "Nguyễn Ái Quốc / Nhà xuất bản Thư viện Lao động Paris",
+    sourceUrl: "https://vi.wikipedia.org/wiki/B%E1%BA%A3n_%C3%A1n_ch%E1%BA%BF_%C4%91%E1%BB%99_th%E1%BB%B1c_d%C3%A2n_Ph%C3%A1p",
+    sourceLabel: "Bản án chế độ thực dân Pháp – Wikipedia tiếng Việt",
+  },
+  {
+    id: 14,
+    title: "Chủ tịch Hồ Chí Minh quan sát mặt trận Đông Khê — Chiến dịch Biên giới 1950",
+    category: "Mốc son lịch sử",
+    year: "1950",
+    caption:
+      "Khoảnh khắc lịch sử bất hủ ghi lại hình ảnh Bác Hồ trực tiếp ra tiền tuyến, trên đỉnh núi Báo Đông quan sát và chỉ đạo Chiến dịch Biên giới Thu – Đông 1950 giành thắng lợi to lớn.",
+    author: "Vũ Năng An / Tư liệu TTXVN",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_Bi%C3%AAn_gi%E1%BB%9Bi_Thu_%E2%80%93_%C4%90%C3%B4ng_1950",
+    sourceLabel: "Chiến dịch Biên giới 1950 – Wikipedia tiếng Việt",
+  },
+  {
+    id: 15,
+    title: "Bản thảo 'Lời kêu gọi Toàn quốc kháng chiến' (19-12-1946)",
+    category: "Mốc son lịch sử",
+    year: "19-12-1946",
+    caption:
+      "Bản thảo bút tích của Chủ tịch Hồ Chí Minh — Bảo vật quốc gia phát động toàn thể dân tộc Việt Nam đứng lên kháng chiến bảo vệ nền độc lập tự do vừa giành được.",
+    author: "Chủ tịch Hồ Chí Minh / Bảo tàng Lịch sử Quốc gia",
+    sourceUrl: "https://vi.wikipedia.org/wiki/L%E1%BB%9Di_k%C3%AAu_g%E1%BB%8Di_to%C3%A0n_qu%E1%BB%91c_kh%C3%A1ng_chi%E1%BA%BFn",
+    sourceLabel: "Lời kêu gọi Toàn quốc kháng chiến – Wikipedia tiếng Việt",
+  },
+  {
+    id: 16,
+    title: "Bến Nhà Rồng (Cảng Sài Gòn) — Nơi người thanh niên Nguyễn Tất Thành ra đi tìm đường cứu nước",
+    category: "Địa danh lịch sử",
+    year: "05-06-1911",
+    caption:
+      "Di tích lịch sử Bến Nhà Rồng tại Thành phố Hồ Chí Minh — nơi ngày 5 tháng 6 năm 1911, người thanh niên yêu nước Nguyễn Tất Thành bước lên tàu Amiral Latouche-Tréville khởi đầu hành trình 30 năm bôn ba cứu nước.",
+    author: "Tư liệu Bảo tàng Hồ Chí Minh – Chi nhánh TP. Hồ Chí Minh",
+    sourceUrl: "https://vi.wikipedia.org/wiki/B%E1%BA%BFn_Nh%C3%A0_R%E1%BB%93ng",
+    sourceLabel: "Bến Nhà Rồng – Wikipedia tiếng Việt",
+  },
+  {
+    id: 17,
+    title: "Bác Hồ với các cháu thiếu nhi",
+    category: "Chân dung lãnh tụ",
+    year: "1954 - 1969",
+    caption:
+      "Hình ảnh giản dị, trìu mến và chan chứa tình yêu thương bao la của Bác Hồ dành cho các thế hệ mầm non tương lai của đất nước: 'Non sông Việt Nam có trở nên tươi đẹp hay không... chính là nhờ một phần lớn ở công học tập của các em'.",
+    author: "Nhiếp ảnh gia Đinh Đăng Định / Tư liệu TTXVN",
+    sourceUrl: "https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh",
+    sourceLabel: "Hồ Chí Minh – Wikipedia tiếng Việt",
+  },
 ];
 
 const DB_NAME = "VisualStorytellerContentDB";
-const DB_VERSION = 4;
+const DB_VERSION = 5;
 const STORE_NAME = "content_sections";
 
 class ContentDatabase {

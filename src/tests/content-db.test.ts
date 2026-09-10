@@ -37,9 +37,9 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
     });
   });
 
-  it("should provide 11 authentic historical photos with valid categories and Pho Hang Buom wiki link", async () => {
+  it("should provide 17 authentic historical photos with valid categories and Pho Hang Buom wiki link", async () => {
     const result = await contentDatabase.getTuLieuAnhContent();
-    expect(result.data).toHaveLength(11);
+    expect(result.data).toHaveLength(17);
 
     // Verify Pho Hang Buom
     const hangBuom = result.data.find((p) => p.id === 2);
@@ -64,6 +64,36 @@ describe("Content Database & Dynamic On-Demand Loading", () => {
     expect(dienBienPhu).toBeDefined();
     expect(dienBienPhu?.title).toContain("Điện Biên Phủ");
     expect(dienBienPhu?.category).toBe("Mốc son lịch sử");
+
+    const duongKachMenh = result.data.find((p) => p.id === 12);
+    expect(duongKachMenh).toBeDefined();
+    expect(duongKachMenh?.title).toContain("Đường Kách mệnh");
+    expect(duongKachMenh?.category).toBe("Tiền đề lý luận");
+
+    const banAn = result.data.find((p) => p.id === 13);
+    expect(banAn).toBeDefined();
+    expect(banAn?.title).toContain("Bản án chế độ thực dân Pháp");
+    expect(banAn?.category).toBe("Tiền đề lý luận");
+
+    const bienGioi = result.data.find((p) => p.id === 14);
+    expect(bienGioi).toBeDefined();
+    expect(bienGioi?.title).toContain("Chiến dịch Biên giới");
+    expect(bienGioi?.category).toBe("Mốc son lịch sử");
+
+    const loiKeuGoi = result.data.find((p) => p.id === 15);
+    expect(loiKeuGoi).toBeDefined();
+    expect(loiKeuGoi?.title).toContain("Lời kêu gọi Toàn quốc kháng chiến");
+    expect(loiKeuGoi?.category).toBe("Mốc son lịch sử");
+
+    const benNhaRong = result.data.find((p) => p.id === 16);
+    expect(benNhaRong).toBeDefined();
+    expect(benNhaRong?.title).toContain("Bến Nhà Rồng");
+    expect(benNhaRong?.category).toBe("Địa danh lịch sử");
+
+    const thieuNhi = result.data.find((p) => p.id === 17);
+    expect(thieuNhi).toBeDefined();
+    expect(thieuNhi?.title).toContain("thiếu nhi");
+    expect(thieuNhi?.category).toBe("Chân dung lãnh tụ");
 
     // Verify every filter category has matching items
     const expectedCategories = [

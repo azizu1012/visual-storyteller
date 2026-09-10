@@ -24,6 +24,12 @@ import tk1945 from "@/assets/tk-1945.jpg";
 import leParia from "@/assets/le-paria-1922.jpg";
 import truongDucThanh from "@/assets/truong-duc-thanh.jpg";
 import dienBienPhu from "@/assets/dien-bien-phu-1954.jpg";
+import duongKachMenh from "@/assets/duong-kach-menh-1927.jpg";
+import banAnThucDan from "@/assets/ban-an-thuc-dan-1925.jpg";
+import chienDichBienGioi from "@/assets/chien-dich-bien-gioi-1950.jpg";
+import loiKeuGoi from "@/assets/loi-keu-goi-khang-chien-1946.jpg";
+import benNhaRong from "@/assets/ben-nha-rong.jpg";
+import bacHoThieuNhi from "@/assets/bac-ho-thieu-nhi.jpg";
 
 export const Route = createFileRoute("/tu-lieu-anh")({
   head: () => ({
@@ -55,6 +61,12 @@ const PHOTO_ASSETS: Record<number, string> = {
   9: leParia,
   10: truongDucThanh,
   11: dienBienPhu,
+  12: duongKachMenh,
+  13: banAnThucDan,
+  14: chienDichBienGioi,
+  15: loiKeuGoi,
+  16: benNhaRong,
+  17: bacHoThieuNhi,
 };
 
 const PHOTOS: PhotoDoc[] = BASE_TU_LIEU_ANH_DATA.map((item) => ({
