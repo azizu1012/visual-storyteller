@@ -10,6 +10,7 @@ describe("Navigation & Hamburger Menu Structure", () => {
     expect(routes).toContain("/gia-tri-tu-tuong");
     expect(routes).toContain("/luan-ban");
     expect(routes).toContain("/tu-lieu-anh");
+    expect(routes).toContain("/contribution");
     expect(routes).not.toContain("/quan-ly");
   });
 

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CoSoHinhThanhRouteImport } from './routes/co-so-hinh-thanh'
+import { Route as ContributionRouteImport } from './routes/contribution'
 import { Route as GiaTriTuTuongRouteImport } from './routes/gia-tri-tu-tuong'
 import { Route as LuanBanRouteImport } from './routes/luan-ban'
 import { Route as MRouteImport } from './routes/m'
@@ -26,6 +27,11 @@ const IndexRoute = IndexRouteImport.update({
 const CoSoHinhThanhRoute = CoSoHinhThanhRouteImport.update({
   id: '/co-so-hinh-thanh',
   path: '/co-so-hinh-thanh',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContributionRoute = ContributionRouteImport.update({
+  id: '/contribution',
+  path: '/contribution',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GiaTriTuTuongRoute = GiaTriTuTuongRouteImport.update({
@@ -62,6 +68,7 @@ const TuLieuAnhRoute = TuLieuAnhRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/co-so-hinh-thanh': typeof CoSoHinhThanhRoute
+  '/contribution': typeof ContributionRoute
   '/gia-tri-tu-tuong': typeof GiaTriTuTuongRoute
   '/luan-ban': typeof LuanBanRoute
   '/m': typeof MRoute
@@ -72,6 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/co-so-hinh-thanh': typeof CoSoHinhThanhRoute
+  '/contribution': typeof ContributionRoute
   '/gia-tri-tu-tuong': typeof GiaTriTuTuongRoute
   '/luan-ban': typeof LuanBanRoute
   '/m': typeof MRoute
@@ -83,6 +91,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/co-so-hinh-thanh': typeof CoSoHinhThanhRoute
+  '/contribution': typeof ContributionRoute
   '/gia-tri-tu-tuong': typeof GiaTriTuTuongRoute
   '/luan-ban': typeof LuanBanRoute
   '/m': typeof MRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/co-so-hinh-thanh'
+    | '/contribution'
     | '/gia-tri-tu-tuong'
     | '/luan-ban'
     | '/m'
@@ -105,6 +115,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/co-so-hinh-thanh'
+    | '/contribution'
     | '/gia-tri-tu-tuong'
     | '/luan-ban'
     | '/m'
@@ -115,6 +126,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/co-so-hinh-thanh'
+    | '/contribution'
     | '/gia-tri-tu-tuong'
     | '/luan-ban'
     | '/m'
@@ -126,6 +138,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CoSoHinhThanhRoute: typeof CoSoHinhThanhRoute
+  ContributionRoute: typeof ContributionRoute
   GiaTriTuTuongRoute: typeof GiaTriTuTuongRoute
   LuanBanRoute: typeof LuanBanRoute
   MRoute: typeof MRoute
@@ -148,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/co-so-hinh-thanh'
       fullPath: '/co-so-hinh-thanh'
       preLoaderRoute: typeof CoSoHinhThanhRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contribution': {
+      id: '/contribution'
+      path: '/contribution'
+      fullPath: '/contribution'
+      preLoaderRoute: typeof ContributionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gia-tri-tu-tuong': {
@@ -198,6 +218,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CoSoHinhThanhRoute: CoSoHinhThanhRoute,
+  ContributionRoute: ContributionRoute,
   GiaTriTuTuongRoute: GiaTriTuTuongRoute,
   LuanBanRoute: LuanBanRoute,
   MRoute: MRoute,

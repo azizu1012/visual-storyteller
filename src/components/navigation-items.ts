@@ -6,6 +6,7 @@ import {
   Award,
   Scale,
   Image as ImageIcon,
+  Users,
 } from "lucide-react";
 
 export interface NavItem {
@@ -65,5 +66,13 @@ export const NAVIGATION_ITEMS: NavItem[] = [
     desc: "Bộ sưu tập ảnh tư liệu quý qua các giai đoạn lịch sử kèm nguồn gốc và bản quyền",
     icon: ImageIcon,
     tag: "Tư liệu",
+  },
+  {
+    to: "/contribution",
+    label: "Đóng góp",
+    title: "Phân công & Đóng góp phát triển",
+    desc: "Minh bạch vai trò chủ đạo của con người (Lead Dev, Biên soạn) và trợ lực từ AI",
+    icon: Users,
+    tag: "Dự án",
   },
 ];

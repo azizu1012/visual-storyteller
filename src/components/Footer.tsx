@@ -101,13 +101,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="/luan-ban?tab=contribution"
+                <Link
+                  to="/contribution"
                   className="flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors font-medium"
                 >
                   <Users className="h-3.5 w-3.5 text-gold" />
                   <span>Phân công & Đóng góp (Contribution)</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

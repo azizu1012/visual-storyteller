@@ -113,10 +113,10 @@ export function Navbar() {
             size="sm"
             className="hidden sm:inline-flex h-8 gap-1.5 rounded-lg border border-gold/30 bg-gold/5 text-xs text-foreground hover:bg-gold/15 hover:border-gold/60 active:scale-95 transition-all"
           >
-            <a href="/luan-ban?tab=contribution" title="Xem phân công & đóng góp phát triển website">
+            <Link to="/contribution" title="Xem phân công & đóng góp phát triển website">
               <Users className="size-3.5 text-gold" />
               <span className="font-medium">Đóng góp</span>
-            </a>
+            </Link>
           </Button>
 
           {/* Hamburger Sheet Drawer */}
@@ -215,33 +215,6 @@ export function Navbar() {
                       </SheetClose>
                     );
                   })}
-                </div>
-
-                {/* Contribution Drawer Highlight */}
-                <div className="pt-2 border-t border-border">
-                  <SheetClose asChild>
-                    <a
-                      href="/luan-ban?tab=contribution"
-                      className="group flex items-center justify-between rounded-xl border border-gold/40 bg-gold/5 p-3 text-xs font-semibold text-foreground hover:bg-gold/15 hover:border-gold transition-all"
-                    >
-                      <div className="flex items-center gap-2.5">
-                        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gold/20 text-gold shadow-xs">
-                          <Users className="h-4 w-4" />
-                        </div>
-                        <div>
-                          <div className="font-display font-bold text-foreground">
-                            Phân công & Đóng góp
-                          </div>
-                          <div className="text-[10px] text-muted-foreground font-normal">
-                            Lead Dev · Nội dung · AI Support
-                          </div>
-                        </div>
-                      </div>
-                      <Badge variant="outline" className="border-gold/40 text-gold text-[10px]">
-                        Attribution
-                      </Badge>
-                    </a>
-                  </SheetClose>
                 </div>
               </div>
 
