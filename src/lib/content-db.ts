@@ -734,8 +734,8 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     caption:
       "Khoảnh khắc lịch sử bất hủ ghi lại hình ảnh Bác Hồ trực tiếp ra tiền tuyến, trên đỉnh núi Báo Đông quan sát và chỉ đạo Chiến dịch Biên giới Thu – Đông 1950 giành thắng lợi to lớn.",
     author: "Vũ Năng An / Tư liệu TTXVN",
-    sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_Bi%C3%AAn_gi%E1%BB%9Bi_Thu_%E2%80%93_%C4%90%C3%B4ng_1950",
-    sourceLabel: "Chiến dịch Biên giới 1950 – Wikipedia tiếng Việt",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Chi%E1%BA%BFn_d%E1%BB%8Bch_Bi%C3%AAn_gi%E1%BB%9Bi",
+    sourceLabel: "Chiến dịch Biên giới – Wikipedia tiếng Việt",
   },
   {
     id: 15,
@@ -811,8 +811,8 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     caption:
       "Chiều 16/8/1945, dưới bóng cây đa Tân Trào lịch sử, đồng chí Võ Nguyên Giáp đọc Quân lệnh số 1 phát động Tổng khởi nghĩa giành chính quyền trên toàn quốc trong Cách mạng Tháng Tám.",
     author: "Tư liệu Khu di tích Quốc gia đặc biệt Tân Trào",
-    sourceUrl: "https://vi.wikipedia.org/wiki/T%C3%A2n_Tr%C3%A0o_(chi%E1%BA%BFn_khu)",
-    sourceLabel: "Tân Trào (chiến khu) – Wikipedia tiếng Việt",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Khu_di_t%C3%ADch_l%E1%BB%8Bch_s%E1%BB%AD_T%C3%A2n_Tr%C3%A0o",
+    sourceLabel: "Khu di tích lịch sử Tân Trào – Wikipedia tiếng Việt",
   },
   {
     id: 22,
@@ -822,8 +822,8 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     caption:
       "Nơi diễn ra Quốc dân Đại hội do Mặt trận Việt Minh triệu tập, nhất trí tán thành chủ trương Tổng khởi nghĩa và bầu ra Ủy ban Dân tộc Giải phóng Việt Nam do Bác Hồ làm Chủ tịch.",
     author: "Tư liệu Khu di tích Quốc gia đặc biệt Tân Trào",
-    sourceUrl: "https://vi.wikipedia.org/wiki/T%C3%A2n_Tr%C3%A0o_(chi%E1%BA%BFn_khu)",
-    sourceLabel: "Tân Trào (chiến khu) – Wikipedia tiếng Việt",
+    sourceUrl: "https://vi.wikipedia.org/wiki/Khu_di_t%C3%ADch_l%E1%BB%8Bch_s%E1%BB%AD_T%C3%A2n_Tr%C3%A0o",
+    sourceLabel: "Khu di tích lịch sử Tân Trào – Wikipedia tiếng Việt",
   },
   {
     id: 23,
@@ -855,8 +855,8 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     caption:
       "Tờ báo cách mạng đầu tiên của Việt Nam do Nguyễn Ái Quốc sáng lập tại Quảng Châu (ra số đầu ngày 21/6/1925), truyền bá chủ nghĩa Mác - Lênin chuẩn bị thành lập Đảng.",
     author: "Hội Việt Nam Cách mạng Thanh niên / Quảng Châu",
-    sourceUrl: "https://vi.wikipedia.org/wiki/B%C3%A1o_Thanh_ni%C3%AAn_(1925)",
-    sourceLabel: "Báo Thanh niên (1925) – Wikipedia tiếng Việt",
+    sourceUrl: "https://vi.wikipedia.org/wiki/H%E1%BB%99i_Vi%E1%BB%87t_Nam_C%C3%A1ch_m%E1%BA%A1ng_Thanh_ni%C3%AAn",
+    sourceLabel: "Hội Việt Nam Cách mạng Thanh niên – Wikipedia tiếng Việt",
   },
   {
     id: 26,
@@ -866,8 +866,8 @@ export const BASE_TU_LIEU_ANH_DATA: TuLieuAnhItem[] = [
     caption:
       "Hàng vạn quần chúng nhân dân Hà Nội tràn ngập quảng trường Nhà hát Lớn, biến cuộc mít tinh thành biểu tình vũ trang khởi nghĩa giành chính quyền thắng lợi trọn vẹn.",
     author: "Nhiếp ảnh gia Vũ Năng An & Nguyễn Bá Khoản / Tư liệu TTXVN",
-    sourceUrl: "https://vi.wikipedia.org/wiki/C%C3%A1ch_m%E1%BB%A1ng_Th%C3%A1ng_T%C3%A1m",
-    sourceLabel: "Cách mạng Tháng Tám – Wikipedia tiếng Việt",
+    sourceUrl: "https://vi.wikipedia.org/wiki/C%C3%A1ch_m%E1%BA%A1ng_th%C3%A1ng_T%C3%A1m",
+    sourceLabel: "Cách mạng tháng Tám – Wikipedia tiếng Việt",
   },
   {
     id: 27,
