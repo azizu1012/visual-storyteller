@@ -15,9 +15,11 @@ import {
   LayoutGrid,
   Table as TableIcon,
   Check,
+  Users,
 } from "lucide-react";
 import { toast } from "sonner";
 import { AnimatedTabs } from "@/components/AnimatedTabs";
+import { ProjectContribution } from "@/components/ProjectContribution";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -227,6 +229,12 @@ function QuanLyPage() {
       id: "thong-ke",
       label: "Báo cáo thống kê",
       icon: <BarChart3 className="h-4 w-4" />,
+    },
+    {
+      id: "contribution",
+      label: "Phân công & Đóng góp",
+      icon: <Users className="h-4 w-4" />,
+      badge: "Team & AI",
     },
   ];
 
@@ -748,6 +756,9 @@ function QuanLyPage() {
             </div>
           </div>
         )}
+
+        {/* Tab 4: Phân công đóng góp (Human-AI Collaboration) */}
+        {activeTab === "contribution" && <ProjectContribution />}
       </AnimatedTabs>
 
       {/* View Detail Dialog */}

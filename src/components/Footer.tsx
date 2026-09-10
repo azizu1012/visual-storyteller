@@ -7,6 +7,7 @@ import {
   Scale,
   Image as ImageIcon,
   Smartphone,
+  Users,
 } from "lucide-react";
 
 export function Footer() {
@@ -98,6 +99,15 @@ export function Footer() {
                   <Smartphone className="h-3.5 w-3.5 text-accent" />
                   <span>Bản Mobile</span>
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="/luan-ban?tab=contribution"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-gold transition-colors font-medium"
+                >
+                  <Users className="h-3.5 w-3.5 text-gold" />
+                  <span>Phân công & Đóng góp (Contribution)</span>
+                </a>
               </li>
             </ul>
           </div>

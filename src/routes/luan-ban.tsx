@@ -14,20 +14,22 @@ import {
   Award,
   BookOpen,
   RefreshCw,
+  Users,
 } from "lucide-react";
 import { AnimatedTabs } from "@/components/AnimatedTabs";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { contentDatabase, type LuanBanContent } from "@/lib/content-db";
+import { ProjectContribution } from "@/components/ProjectContribution";
 
 export const Route = createFileRoute("/luan-ban")({
   head: () => ({
     meta: [
-      { title: "Luận bàn: Thời thế & Anh hùng · Visual Storyteller" },
+      { title: "Luận bàn & Phân công đóng góp · Visual Storyteller" },
       {
         name: "description",
         content:
-          "Chuyên đề luận bàn: Hai mặt của một thời đại (Thời thế tạo anh hùng vs Anh hùng tạo thời thế) và Góc nhìn học giả quốc tế có dẫn nguồn chính thống.",
+          "Chuyên đề luận bàn: Hai mặt của một thời đại (Thời thế tạo anh hùng vs Anh hùng tạo thời thế), Góc nhìn học giả quốc tế và Bảng phân công đóng góp dự án (Human-AI Collaboration).",
       },
     ],
   }),
@@ -35,7 +37,18 @@ export const Route = createFileRoute("/luan-ban")({
 });
 
 function LuanBanPage() {
-  const [activeTab, setActiveTab] = React.useState<string>("doi-chieu");
+  const [activeTab, setActiveTab] = React.useState<string>(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get("tab");
+      if (tabParam && ["doi-chieu", "bien-chung", "hoc-gia", "contribution"].includes(tabParam)) {
+        return tabParam;
+      }
+    }
+    return "doi-chieu";
+  });
+
+  const isDbTab = activeTab !== "contribution";
 
   // Cơ chế truy vấn dữ liệu theo yêu cầu (on-demand loading) từ Database
   // Khi người dùng bấm tab nào, TanStack Query sẽ truy vấn trực tiếp từ DB cho tab đó
@@ -43,6 +56,7 @@ function LuanBanPage() {
     queryKey: ["luan-ban-content", activeTab],
     queryFn: () => contentDatabase.getLuanBanContent(activeTab),
     staleTime: 1000 * 60 * 5, // Cache 5 phút
+    enabled: isDbTab,
   });
 
   const content: LuanBanContent = dbResult?.data || (contentDatabase as any).memoryCache?.get("luan-ban");
@@ -65,6 +79,12 @@ function LuanBanPage() {
       label: "Góc nhìn học giả quốc tế",
       icon: <MessageSquareQuote className="h-4 w-4" />,
       badge: "Có link trích dẫn",
+    },
+    {
+      id: "contribution",
+      label: "Phân công & Đóng góp",
+      icon: <Users className="h-4 w-4" />,
+      badge: "AI & Nhóm dự án",
     },
   ];
 
@@ -307,6 +327,9 @@ function LuanBanPage() {
                 </div>
               </div>
             )}
+
+            {/* Tab 4: Phân công & Đóng góp dự án (Human-AI Collaboration & Attribution) */}
+            {activeTab === "contribution" && <ProjectContribution />}
           </>
         )}
       </AnimatedTabs>

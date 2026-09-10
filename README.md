@@ -7,7 +7,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![TanStack Start](https://img.shields.io/badge/TanStack-Start%20%26%20Router-FF4154?style=for-the-badge&logo=tanstack)](https://tanstack.com/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS%20v4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Tests](https://img.shields.io/badge/Tests-15%2F15%20Passing-brightgreen?style=for-the-badge&logo=vitest)](https://vitest.dev/)
+[![Tests](https://img.shields.io/badge/Tests-16%2F16%20Passing-brightgreen?style=for-the-badge&logo=vitest)](https://vitest.dev/)
 [![Archive](https://img.shields.io/badge/Kho%20t%C6%B0%20li%E1%BB%87u-28%20%E1%BA%A2nh%20L%E1%BB%8Bch%20S%E1%BB%AD-orange?style=for-the-badge)](https://github.com/azizu1012/visual-storyteller)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
@@ -15,7 +15,7 @@
   <strong>Nền tảng nghiên cứu và trải nghiệm học thuật trực quan hóa chuyên sâu về Cơ sở hình thành, Tiến trình phát triển (1911 – 1969), Giá trị thời đại của Tư tưởng Hồ Chí Minh và Kho lưu trữ 28 tư liệu ảnh lịch sử chân thực.</strong>
 </p>
 
-[Khám phá dự án](https://github.com/azizu1012/visual-storyteller) • [Kho tư liệu 28 ảnh](#-kho-tư-liệu-ảnh-lịch-sử-28-tác-phẩm) • [Tính năng nổi bật](#-tính-năng-nổi-bật) • [Kiến trúc & Bảo mật](#-kiến-trúc-csdl--bảo-mật-máy-chủ) • [Cài đặt & Vận hành](#-cài-đặt--vận-hành)
+[Khám phá dự án](https://github.com/azizu1012/visual-storyteller) • [Kho tư liệu 28 ảnh](#-kho-tư-liệu-ảnh-lịch-sử-28-tác-phẩm) • [Phân công đóng góp](#-phân-công--đóng-góp-xây-dựng-dự-án-project-attribution) • [Tính năng nổi bật](#-tính-năng-nổi-bật) • [Cài đặt & Vận hành](#-cài-đặt--vận-hành)
 
 </div>
 
@@ -48,6 +48,32 @@ Kho lưu trữ tư liệu ảnh tại `/tu-lieu-anh` được xây dựng với 
 | **Bối cảnh xã hội** | **3** | • **Phố Hàng Buồm, Hà Nội đầu thế kỷ XX** *(Ảnh phố cổ nguyên bản `thuctien-vn.jpg`, liên kết chính thức [Phố Hàng Buồm – Wikipedia](https://vi.wikipedia.org/wiki/Ph%E1%BB%91_H%C3%A0ng_Bu%E1%BB%93m))*<br>• Cầu Paul Doumer (Cầu Long Biên thời Pháp thuộc)<br>• Di tích Nhà tù Hỏa Lò (Maison Centrale tại Hà Nội) |
 | **Bối cảnh thời đại** | **2** | • Cung điện Mùa Đông sau Cách mạng Tháng Mười Nga (1917)<br>• Nguyễn Ái Quốc tại Đại hội V Quốc tế Cộng sản (Comintern, 1924) |
 | **Chân dung lãnh tụ** | **2** | • Chân dung Chủ tịch Hồ Chí Minh trong những ngày đầu độc lập (1946)<br>• Bác Hồ cùng các cháu thiếu nhi Việt Nam |
+
+---
+
+## 👥 Phân công & Đóng góp xây dựng dự án (Project Attribution)
+
+Dự án được xây dựng dựa trên sự kết hợp giữa **năng lực chủ đạo công nghệ & nghiên cứu nội dung của con người** và **trợ lực từ AI (Human-AI Pair Programming)**:
+
+### 1. Phân vai nhóm phát triển & Biên soạn
+
+| Thành viên / Thực thể | Vai trò chính | Nhiệm vụ chi tiết & Đóng góp cốt lõi |
+| :--- | :--- | :--- |
+| **Bạn (Tôi / Lead Developer)** | **Chủ đạo dự án & Lead Developer** | • **Chủ đạo kiến trúc framework:** Khởi tạo, định hướng và xây dựng dự án theo chuẩn *TanStack Start (React 19)* + *Tailwind CSS*.<br>• **Lập trình CRUD:** Trực tiếp code toàn bộ hệ thống quản lý tư liệu (`/quan-ly`), các thao tác Create, Read, Update, Delete và cơ chế khôi phục mẫu.<br>• **Debug & Rà soát mã nguồn:** Trực tiếp review code, tối ưu logic xử lý và xử lý các lỗi kỹ thuật.<br>• **Chủ trì kiểm thử thủ công (Lead Manual Testing):** Trực tiếp nghiệm thu thực tế trên các thiết bị và màn hình. |
+| **Trợ lý AI (Antigravity)** | **AI Pair Programmer** | • **Thiết kế giao diện Web (UI/UX):** Xây dựng phong cách bảo tàng (Parchment & Ink), tối ưu hiển thị thích ứng (Auto-scale Responsive) Desktop & Mobile.<br>• **Cải thiện Animation:** Thiết lập hiệu ứng Framer Motion, micro-interactions, chuyển tab mượt mà.<br>• **Kiểm thử liên kết tự động (URL Scanner):** Quét 100% liên kết (90+ link), loại bỏ liên kết lỗi 404, redirect.<br>• **Tự động hóa kiểm thử (Auto Testing):** Viết và thực thi bộ test Vitest (16/16 pass) và kiểm tra kiểu dữ liệu TypeScript strict. |
+| **Gia An** | **Biên soạn tư tưởng** | • Soạn thảo, tra cứu và tổng hợp các chuyên đề tư tưởng Hồ Chí Minh.<br>• Hệ thống hóa cơ sở thực tiễn và tiền đề lý luận Mác – Lênin. |
+| **Ming Đức (Minh Đức)** | **Nội dung & Manual Tester** | • Soạn thảo nội dung lịch sử các thời kỳ và giá trị thời đại.<br>• **Tham gia kiểm thử thủ công (Manual Testing):** Phối hợp cùng Lead Developer kiểm thử thực tế và rà soát trải nghiệm người dùng. |
+| **Duy Khánh** | **Nghiên cứu tư liệu** | • Nghiên cứu tư liệu, chọn lọc văn kiện và sự kiện lịch sử.<br>• Thẩm định trích dẫn học giả quốc tế và nguồn gốc 28 tư liệu ảnh quý. |
+
+### 2. Phân định quy trình kiểm thử (Testing Workflow)
+
+* **🤖 Auto Testing (AI phụ trách):**
+  * Chạy tự động Vitest Test Suite kiểm tra Content DB, Navigation, và các hàm CRUD.
+  * Tự động quét kiểm tra tính toàn vẹn của 100% URL trong mã nguồn với mã phản hồi HTTP 200 OK.
+  * TypeScript strict typecheck bảo đảm không phát sinh lỗi biên dịch hoặc runtime.
+* **👤 Manual Testing (Nhóm con người phụ trách):**
+  * **Tester chính:** Lead Developer (Tôi) trực tiếp kiểm thử trên các thiết bị di động, kiểm tra các thao tác quản lý dữ liệu thực tế và độ co giãn giao diện.
+  * **Tester phối hợp:** Ming Đức (Minh Đức) trực tiếp đọc duyệt, đối chiếu chữ và ảnh thực tế.
 
 ---
 
